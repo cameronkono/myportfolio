@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Reusables */
+
+html,
+body {
+	font-family: sazz, Sans-serif;
+	text-rendering: geometricprecision;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+    background-color: rgba(20,20,20);
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header {
+    padding: 32px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(20,20,20,0.6);
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(24px)
+}
+
+.menu a {
+    margin-right: 40px;
+}
+
+.one {
+    height: 200vh;
+    background-color: cornflowerblue;
+    margin: 200px 80px;
+}
