@@ -8,7 +8,7 @@
 
 html,
 body {
-	font-family: sazz, Sans-serif;
+	font-family: Deluxe, Sans-serif;
 	text-rendering: geometricprecision;
     scroll-behavior: smooth;
     overflow-x:hidden;
@@ -43,4 +43,16 @@ body {
     height: 200vh;
     background-color: cornflowerblue;
     margin: 200px 80px;
+}
+
+@font-face {
+    font-family: 'Deluxe';
+    src: url(fonts/sazz-400-webfont.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Deluxe';
+    src: url(fonts/sazz-650-webfont.woff) format('woff');
+    font-weight: 600;
 }
