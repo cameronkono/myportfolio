@@ -32,7 +32,8 @@ body {
     position: fixed;
     font-weight: 600;
     width: 100vw;
-    backdrop-filter: blur(24px)
+    webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
 }
 
 .menu a {
