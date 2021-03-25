@@ -33,8 +33,10 @@ body {
     font-weight: 600;
     width: 100vw;
     z-index: 9999;
-    webkit-backdrop-filter: blur(24px);
+    -webkit-backface-visibility: hidden;
+    -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
+    backface-visibility: hidden;
 }
 
 .menu a {
