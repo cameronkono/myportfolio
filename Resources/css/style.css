@@ -45,9 +45,41 @@ body {
 }
 
 .one {
-    height: 200vh;
+    height: 70vh;
     background-color: lightgreen;
     margin: 200px 24px;
+}
+
+.two {
+    height: 200vh;
+    background-color: salmon;
+    margin: 200px 24px;
+}
+
+.imgBox {
+    background-color: grey;
+    height: 50vw;
+    width: 75vw;
+    display: inline-block;
+}
+
+.imgOne {
+    background: url(img/Screen%20Shot%202021-03-24%20at%205.43.44%20PM.png);
+    height: 50vw;
+    width: 75vw;
+    background-size: cover;
+        display: inline-block;
+    background-position: center;
+}
+
+.imgTwo {
+    background: url(img/Screen%20Shot%202021-03-24%20at%205.44.08%20PM.png);
+    height: 50vw;
+    width: 75vw;
+    background-size: cover;
+    background-position: center;
+        display: inline-block;
+    left: 20px;
 }
 
 @font-face {
