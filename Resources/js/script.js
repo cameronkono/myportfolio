@@ -2,6 +2,7 @@ $( document ).ready(function() {
     var leftgear = document.getElementById("leftgear");
     
     window.addEventListener("scroll", function() {
+        leftgear.style.transform = "translate("+window.pageYOffset/2.994+"px)";
         leftgear.style.transform = "rotate("+window.pageYOffset/3+"deg)";
     });
 });

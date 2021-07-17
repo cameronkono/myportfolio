@@ -7,12 +7,12 @@
 html,
 body {
 	/*background-color: gainsboro;*/
-	background: #000;
+	background: #151414;
     font-family: "CK Mono";
 	font-weight: 300;
     font-feature-settings: "ss02";
 	text-rendering: geometricprecision;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.02em;
     color: white;
 	scroll-behavior: smooth;
@@ -21,7 +21,8 @@ body {
 
 @font-face {
     font-family: "CK Mono";
-    src: url(fonts/monov2-300-webfont.woff2);
+    src: url(fonts/monov2-350-webfont.woff2);
+    src: url(fonts/monov2-350-webfont.woff2);
 }
 
 p {
@@ -33,7 +34,7 @@ p {
 }
 
 .nav {
-	background: #000;
+	background: #151414;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -69,6 +70,11 @@ p {
 	transition: 0.25s;
 }
 
+
+#myDIV {
+    display: none;
+}
+
 .menu a:hover{
 	color: white;
 }
@@ -78,7 +84,7 @@ p {
 }
 
 .gearbox {
-padding: 2vw 8vw;
+padding: 4vw 8vw;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -114,7 +120,12 @@ padding: 2vw 8vw;
 
 .workImg {
     display: inline-flex;
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+.roles {
+    margin-top: 15px;
+    color: grey;
 }
 
 .block {
@@ -155,9 +166,17 @@ padding: 2vw 8vw;
 	color: gray;
 	display: flex;
 	justify-content: space-between;
+    align-items: center;
 }
 
 .footer a{
     color: grey;
     text-decoration: none;
 }
+
+
+
+
+
+
+
