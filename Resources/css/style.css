@@ -20,12 +20,16 @@ body {
 }
 
 @font-face {
-font-family: "CK Mono";
-src: url(fonts/monov2-300-webfont.woff2);
+    font-family: "CK Mono";
+    src: url(fonts/monov2-300-webfont.woff2);
 }
 
 p {
     line-height: 133%;
+}
+
+.menu .activeLink {
+    color: white;
 }
 
 .nav {
