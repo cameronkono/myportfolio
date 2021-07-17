@@ -7,9 +7,9 @@
 html,
 body {
 	/*background-color: gainsboro;*/
-	background: #151414;
+	background: #0D0D0D;
     font-family: "CK Mono";
-	font-weight: 300;
+	font-weight: 400;
     font-feature-settings: "ss02";
 	text-rendering: geometricprecision;
     font-size: 12px;
@@ -21,8 +21,7 @@ body {
 
 @font-face {
     font-family: "CK Mono";
-    src: url(fonts/monov2-350-webfont.woff2);
-    src: url(fonts/monov2-350-webfont.woff2);
+    src: url(fonts/monov2-400-webfont.woff2);
 }
 
 p {
@@ -34,7 +33,7 @@ p {
 }
 
 .nav {
-	background: #151414;
+	background: #0D0D0D;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
