@@ -56,7 +56,7 @@ $(document).ready(function() {
 	});
 
 	function move() {
-		eyeX = mouseX / screenWidth * 50;
+		eyeX = mouseX / screenWidth * 90;
 		eyeY = mouseY / screenHeight * 50;
 
 		$(".eye").css({
@@ -90,7 +90,7 @@ $(document).ready(function() {
 	var blinkTime;
 
 	function autoBlink() {
-		blinkTime = (Math.random() * (8 - 3) + 3) * 1000;
+		blinkTime = (Math.random() * (8 - 30) + 3) * 1000;
 		setTimeout(function() {
 			blink();
 			autoBlink();
