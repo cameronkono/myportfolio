@@ -223,7 +223,7 @@ p {
 }
 
 .block:hover .workImg {
-    opacity: 50%;
+    opacity: 75%;
     cursor: pointer;
 }
 
