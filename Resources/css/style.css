@@ -7,14 +7,13 @@
 html,
 body {
 	/*background-color: gainsboro;*/
-	background: #000;
+	background: #EDEDED;
     font-family: "CK Mono";
 	font-weight: 400;
-    font-feature-settings: "ss02";
 	text-rendering: geometricprecision;
     font-size: 12px;
     letter-spacing: 0.02em;
-    color: white;
+    color: #262626;
 	scroll-behavior: smooth;
     -webkit-scroll-behavior: smooth;
 }
@@ -29,11 +28,11 @@ p {
 }
 
 .menu .activeLink {
-    color: white;
+    color: #262626;
 }
 
 .nav {
-	background: #000;
+	background: #EDEDED;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -54,13 +53,13 @@ p {
 }
 
 .menu a{
-	color: #5E5C66;
+	color: #808080;
 	text-decoration: none;
 	margin-left: 50px;
 }
 
 .myName a{
-	color: white;
+	color: #262626;
 	text-decoration: none;
 }
 
@@ -74,7 +73,7 @@ p {
 }
 
 .menu a:hover{
-	color: white;
+	color: #262626;
 }
 
 .myName a:hover{
@@ -201,7 +200,7 @@ p {
 .workrow {
     display: flex;
     flex-direction: column;
-    margin: 0vw 7.5vw;
+    margin: 0vw 8vw;
     justify-content: space-between;
     margin-bottom: 200vh;
 }
@@ -229,11 +228,9 @@ p {
 
 .block:hover .workTitle {
     background: #343238;
-    padding: 2px 8px;
-    margin-left: -8px;
+    padding: 2px 4px;
     margin-top: -2px;
     margin-bottom: -2px;
-    border-radius: 40px;
     color: white
 }
 
@@ -256,8 +253,9 @@ p {
     position: absolute;
     align-self: flex-end;
     font-weight: 400;
-    color: white;
-    background: black;
+    color: #fafafa;
+    line-height: 140%;
+    background: #262626;
     margin-top: 25px;
     padding: 10px;
     display: none;
@@ -271,7 +269,7 @@ p {
 }
 
 .zelus {
-    background: url(img/zlscover.jpg);
+    background: url(img/zls_yellow_app_screens.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -295,7 +293,7 @@ p {
 }
 
 .type {
-    background: url(img/font.png);
+    background: url(img/amorous_cd.jpg);
     background-size: cover;
     background-position: center;
     width: 48vw;
