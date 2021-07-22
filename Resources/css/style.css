@@ -5,7 +5,7 @@
 }
 body,
 html {
-	font-family: 'mono3';
+	font-family: 'ckmono';
 	background: #E6E6E6;
 	color: #000;
 	font-feature-settings: "ss02", "ss10";
@@ -26,8 +26,13 @@ html {
          url(fonts/zelustextcut8-bold-webfont.woff2);
 }
 
+@font-face {
+    font-family: "ckmono";
+    src: url(fonts/mono3-300-webfont.woff2);
+}
+
 h1 {
-    font-family: mono3;
+    font-family: 'ckmono';
 	letter-spacing: -0.03em;
     font-size: 12px;
     font-weight: 300;
