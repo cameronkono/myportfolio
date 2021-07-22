@@ -7,7 +7,7 @@ $(document).ready(function(){
     damping:100,
 		impulse:{
 		f:250,
-		p:{x:12,y:16}
+		p:{x:40,y:20}
     },
   });
 });

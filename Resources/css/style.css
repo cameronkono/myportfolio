@@ -157,10 +157,16 @@ h1 {
     align-items: flex-start;
 	color: #000;
 	border-radius: 10px;
+    cursor: grab;
 }
 
 .throwable:hover {
    z-index: 14; 
+}
+
+.throwable:focus,
+.throwable:active {
+    cursor: grabbing;
 }
 
 .projectInfo {
@@ -169,12 +175,15 @@ h1 {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-	white-space: nowrap;
     width: 100%;
 }
 
 .projectInfo p {
     line-height: 133%;
+}
+
+.roles {
+    margin-bottom: 10px;
 }
 
 .link:hover {
@@ -185,7 +194,7 @@ h1 {
     background: url(img/zls.jpg);
     background-position: center;
     background-size: cover;
-    background-color: goldenrod;	
+    background-color: #FAE457;	
     width: 36vw;
     height: 24vw;
     color: transparent;
@@ -198,14 +207,19 @@ h1 {
     right: 0;
     color: #000;
 }
-
 .complio {
     width: 24vw;
     height: 16vw;
     background: url(img/complio.png);
     background-position: center;
     background-size: cover;
-    color:transparent;
+    color: transparent;
+}
+
+.complio:hover {
+    background: none;
+    color: transparent;
+    background-color: #73E57C;
 }
 
 .complio:hover .projectInfo {
