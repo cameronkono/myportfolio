@@ -55,6 +55,10 @@ h1 {
 	display: flex;
 }
 
+.activeLink {
+    color: #000;
+}
+
 .nav a {
 	text-decoration: none;
 	color: gray;
