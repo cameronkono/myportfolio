@@ -153,7 +153,7 @@ h1 {
 	cursor: pointer;
     align-items: flex-start;
 	color: #000;
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 .throwable:hover {

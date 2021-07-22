@@ -1,6 +1,10 @@
-@media all and (max-width: 520px) {
+@media all and (max-width: 600px) {
     
- .zelus {
+.throwable {
+	border-radius: 5px;
+}
+    
+.zelus {
     background: url(img/zls.jpg);
     background-position: center;
     background-size: cover;
