@@ -4,16 +4,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Southern California based graphic designer from Honolulu, Hawaii. Exploring typographical treatments and bold imagery.">
-        <title>Cameron Kono</title>
+        <meta name="description" content="Created for those with a heart for competition, Zelus connects you to runners and cyclists from around the globe, letting you compete against other athletes in real-time races.">
+        <title>Zelus - Make every day a race day.</title>
         
 <!--STYLESHEETS/FONTS-->
         
         <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
-        
+
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
+        <script  src="https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js"></script>
         
         <script src="Resources/js/script.js"></script>
 
@@ -22,78 +24,75 @@
     </head>
     
     <body>
-        <div id="topanchor"></div>
-        <div class=seat></div>
-        <div class=nav id="one">
-            <div class=myName>
-                <a href=#>Cameron Kono</a>
-            </div>
-            <div class=menu>
-                <a href=# class="activeLink">Index</a>
-                <a href=#>Profile</a>
-            </div>
+
+        <div class=nav>
+            <h1>Cameron Kono</h1>
+            <ul>
+                <a href=#><li>Index</li></a>
+                <a href=#><li>Profile</li></a>
+            </ul>
         </div>
-        <a href="#topanchor">
-            <div class="container" id="container">
+        
+        <div class="container" id="container">
+            
+            <svg class="svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <clipPath id="clip">
+<path d="M40 0C20.4086 0 7 11.1986 0 22.5C7 33.8014 20.4086 45 40 45C59.5914 45 73 33.8014 80 22.5C73 11.1986 59.5914 0 40 0Z"/></clipPath>
+</svg>
+
+            
                 <div class="eye"><div id="leftgear">↑</div></div>
                 <div class="lid lid-top"></div>
                 <div class="lid lid-bottom"></div>
-        </div></a>
-        <!--<div class="gearbox">
-            <a href="#topanchor"><div class="gear" id="leftgear">Top</div></a>
-        </div>-->
-        <div class=workrow>
-            
-            <div class="zelusBlock block">
-                <p class="workTitle">Zelus App</p>
-                <p class="roles">LOGO / BRAND IDENTITY / ART DIRECTION / ILLUSTRATIONS</p>
-                <div class="workImg zelus">
-                </div>
-            </div>
-            
-            <div class="lashbarBlock block">
-                <p class="workTitle">Lashbar Salons</p><p class="roles">LOGO / BRAND IDENTITY / ART DIRECTION</p>
-                <div class="workImg lashbar">
-                </div>
-            </div>
-            
-            <div class=dlbWork>
-            <div class="typeBlock block">
-                <p class="workTitle">Amorous - Sitting Pretty (2021)</p><p class="roles">ALBUM ART</p>
-                <div class="workImg type">
-                </div>
-            </div>
-            <div class="monoBlock block">
-                <div class=workInfo onmouseover="showDesc()" onmouseout="hideDesc()">i</div>
-                <script>
-function showDesc(x) {
-   document.getElementById('workInfoDesc').style.display='block';
-}
-                    
-function hideDesc(x) {
-   document.getElementById('workInfoDesc').style.display='none';
-}
-</script>
+        </div>
 
-                <div class=workInfoDesc id="workInfoDesc">Designed to be the main, driving font that my portfolio is set in.</div>
-                <p class="workTitle">Fati Mono</p><p class="roles">TYPE DESIGN</p>
-                <div class="workImg mono">
-                </div>
+        <div class='zelus throwable' id="mama" onmouseover="makeStatic();">
+            <div class=projectInfo>
+                <p>LOGO, BRANDING,<br>ILLUSTRATION,<br>WEB DESIGN, UI/UX</p>
+                <h1>Zelus</h1>
             </div>
-            </div>  
-                        
-            <div class="compBlock block">
-                <p class="workTitle">Complio Startup Consulting</p><p class="roles">LOGO / BRAND IDENTITY</p>
-                <div class="workImg comp">
-                </div>
+        </div>
+        <script>
+        function makeStatic(){
+	document.getElementById('mama').style.height('10vw');
+}
+        </script>
+
+        <div class='complio throwable'>
+            <div class=projectInfo>
+                <p>LOGO, BRANDING,<br>GUIDELINES</p>
+                <h1>Complio</h1>
             </div>
-            
+        </div>
+
+        <div class='amorous throwable'>
+            <div class=projectInfo>
+                <p>ALBUM ARTWORK</p>
+                <h1>Amorous —<br>Fling</h1>
+            </div>
+        </div>
+
+        <div class='lashbar throwable'>
+            <div class=projectInfo>
+                <p>LOGO, BRANDING,<br>GUIDELINES</p>
+                <h1>Lashbar<br>Salons</h1>
+            </div>
         </div>
         
-        <div class=footer>
-                <p>Cameron Kono 2021.</p>
-    
+        <div class='mono throwable'>
+            <div class=projectInfo>
+                <p>TYPE DESIGN</p>
+                <h1>Fatti<br>Mono</h1>
+            </div>
         </div>
+        
+        <div class='arkiva throwable'>
+            <div class=projectInfo>
+                <p>UI/UX</p>
+                <h1>Zelus App</h1>
+            </div>
+        </div>
+        
     </body>
     
 </html>

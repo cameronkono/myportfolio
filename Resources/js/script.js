@@ -1,40 +1,18 @@
-/*
-$( document ).ready(function() {
-    var leftgear = document.getElementById("leftgear");
-    
-    window.addEventListener("scroll", function() {
-        leftgear.style.transform = "rotate("+window.pageYOffset/2+"deg)";
-    });
-});
-*/
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 20) {
-        //clearHeader, not clearheader - caps H
-        $(".nav").addClass("navScrolled");
-    }
-		
-		else {
-		$(".nav").removeClass("navScrolled");
-		}
+$(document).ready(function(){
+  $(".throwable").throwable({
+    autostart:false,
+    gravity:{x:0.00,y:0},
+    shape:"box",                 
+    bounce:0.5,
+    damping:100,
+		impulse:{
+		f:250,
+		p:{x:12,y:16}
+    },
+  });
 });
 
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 500) {
-        //clearHeader, not clearheader - caps H
-        $(".container").addClass("visible");
-    }
-		
-		else {
-		$(".container").removeClass("visible");
-		}
-});
-
+window.onresize = function(){ location.reload(); }
 
 $(document).ready(function() {
 
@@ -56,7 +34,7 @@ $(document).ready(function() {
 	});
 
 	function move() {
-		eyeX = mouseX / screenWidth * 90;
+		eyeX = mouseX / screenWidth * 72;
 		eyeY = mouseY / screenHeight * 50;
 
 		$(".eye").css({

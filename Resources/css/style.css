@@ -1,135 +1,78 @@
-* {
-	margin: 0;
-	padding: 0;
+*{
+	margin:0;
+	padding:0;
 	box-sizing: border-box;
 }
-
-html,
-body {
-	/*background-color: gainsboro;*/
-	background: #EDEDED;
-    font-family: "CK Mono";
-	font-weight: 400;
-	text-rendering: geometricprecision;
+body,
+html {
+	font-family: 'mono3';
+	background: #E6E6E6;
+	color: #000;
+	font-feature-settings: "ss02", "ss10";
+    overflow: hidden;
     font-size: 12px;
-    letter-spacing: 0.02em;
-    color: #262626;
-	scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth;
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: "CK Mono";
-    src: url(fonts/mono3-400-webfont.woff2), url(fonts/mono3-700-webfont.woff2);
+    font-family: "arkivabig";
+    src: url(fonts/zelustitlingcut7-webfont.woff2);
 }
 
-p {
-    line-height: 133%;
+@font-face {
+    font-family: "arkiva";
+    src: url(fonts/zelustextcut8-regular-webfont.woff2), 
+         url(fonts/zelustextcut8-medium-webfont.woff2),
+         url(fonts/zelustextcut8-bold-webfont.woff2);
 }
 
-.menu .activeLink {
-    color: #262626;
+h1 {
+    font-family: mono3;
+	letter-spacing: -0.03em;
+    font-size: 12px;
+    font-weight: 300;
+	font-feature-settings: "ss02", "ss10";
 }
 
 .nav {
-	background: #EDEDED;
+	width: 100vw;
+	padding: 2vw 3vw;
 	display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 15;
 	justify-content: space-between;
 	align-items: center;
-	padding: 6vw 8vw;
-	width: 100vw;
-	position: fixed;
-	top: 0;
-    z-index: 9999;
-    transition: padding 0.25s;
 }
 
-.navScrolled {
-    padding: 1.65vw 8vw;
+.nav ul {
+	list-style: none;
+	display: flex;
 }
 
-#topanchor {
-	height: 30vh;
-}
-
-.menu a{
-	color: #8C8C8C;
+.nav a {
 	text-decoration: none;
+	color: gray;
 	margin-left: 50px;
 }
 
-.myName a{
-	color: #262626;
-	text-decoration: none;
-}
-
-.nav a,
-.myName a{
-}
-
-
-#myDIV {
-    display: none;
-}
-
-.menu a:hover{
-	color: #262626;
-}
-
-.myName a:hover{
-	color: #8C8C8C;
-}
-
-.gearbox {
-    padding: 2vw 8vw;
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	display: flex;
-    z-index: 999;
-}
-/*
-.gearbox a {
-	text-decoration: none;
-	color: black;
-}
-
-.gear {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 60px;
-	background-color: whitesmoke;
-    height: 60px;
-    font-weight: 500;
-	border-radius: 50px;
-	text-decoration: none;
-	color: black;
-}
-*/
 .container {
 	background-color: white;
 	cursor: pointer;
-	width: 70px;
-	height: 50px;
+	width: 80px;
+	height: 45px;
 	position: fixed;
 	right: 0;
 	bottom: 0;
-    margin-right: 8vw;
-    margin-bottom: -200px;
+    margin: 2vw 3vw;
 	display: flex;
-    z-index: 999;
+    z-index: 20;
 	transform: translate(-0%, -0%);
 	border-radius: 80px;
 	overflow: hidden;
 	transition: 0.25s, margin 0.75s;
+    clip-path: url(#clip);
 }
-
-.visible {
-    margin: 2.25vw 8vw;
-}
-
-
 
 .eye {
 	width: 40px;
@@ -145,7 +88,7 @@ p {
     font-size: 12px;
     color:transparent;
 	transform: translate(-88%, -44%);
-	transition: border .4s, width .25s, height .25s, color 0.25s, font-size 0.4s;
+	transition: margin .4s, border .4s, width .25s, height .25s, color 0.25s, font-size 0.4s;
 }
 
 .container:hover .eye {
@@ -154,13 +97,14 @@ p {
     color:white;
     font-size: 30px;
 	height: 55px;
+    margin-left: 6px;
 }
 
 .lid {
 	height: 50%;
 	width: 100%;
 	position: absolute;
-	background: #000;
+	background: #333333;
 }
 
 .lid-top {
@@ -197,157 +141,121 @@ p {
 	}
 }
 
-.workrow {
-    display: flex;
-    flex-direction: column;
-    margin: 0vw 8vw;
-    justify-content: space-between;
-    margin-bottom: 200vh;
+.throwable {
+	display: inline-flex;
+    justify-content: flex-start;
+	width: auto;
+	cursor: pointer;
+    align-items: flex-start;
+	color: #000;
+	border-radius: 8px;
 }
 
-.workImg {
-    display: inline-flex;
-    margin-top: 16px;
+.throwable:hover {
+   z-index: 14; 
 }
 
-.roles {
-    margin-top: 8px;
-    color: #5E5C66;
+.projectInfo {
+	padding: 20px;
+	white-space: nowrap;
 }
 
-.block {
-    margin-bottom: 8vw;
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.block:hover .workImg {
-    opacity: 75%;
-    cursor: pointer;
-}
-
-.block:hover .workTitle {
-    background: #262626;
-    padding: 2px 4px;
-    margin-top: -2px;
-    margin-bottom: -2px;
-    color: white
-}
-
-.workInfo {
-    display: block;
-    position: absolute;
-    align-self: flex-end;
-    font-size: 20px;
-    font-weight: 700;
-    color: #8C8C8C;
-    cursor: default;
-}
-
-.workInfo:hover .workInfoDesc  {
-    display: block;
-}
-
-.workInfoDesc {
-    width: 200px;
-    position: absolute;
-    align-self: flex-end;
-    font-weight: 400;
-    color: #fafafa;
-    line-height: 140%;
-    background: #262626;
-    margin-top: 25px;
-    padding: 10px;
-    display: none;
-    z-index: 20;
-}
-
-.workTitle {
-    display: inline-flex;
-    align-self: flex-start;
-    cursor: pointer;
+.projectInfo p {
+    line-height: 133%;
+	max-width: 40px;
+	margin-bottom: 15px;
 }
 
 .zelus {
-    background: url(img/zls_yellow_app_screens.jpg);
-    background-size: cover;
+    background: url(img/zls.jpg);
     background-position: center;
-    width: 100%;
-    height:48vw;
+    background-size: cover;
+    background-color: goldenrod;	
+    width: 36vw;
+    height: 24vw;
+    color: transparent;
 }
 
-.lashbarBlock {
-    align-self: flex-end;
+.zelus:hover {
+    background: none;
+    background-color: #FAE457;
+    position: fixed;
+    right: 0;
+    color: #000;
+}
+
+.complio {
+    width: 24vw;
+    height: 16vw;
+    background: url(img/complio.png);
+    background-position: center;
+    background-size: cover;
+    color:transparent;
+}
+
+.complio:hover .projectInfo {
+    color: #000;
+}
+
+
+.amorous {
+    background: url(img/amorous_alt_cd.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 24vw;
+    height: 16vw;
+	color: transparent;
+}
+
+.amorous:hover .projectInfo {
+    color: #fff;
+    mix-blend-mode: difference;
 }
 
 .lashbar {
+    width: 30vw;
+    height: 20vw;
     background: url(img/lb.jpg);
-    background-size: cover;
     background-position: center;
-    width: 60vw;
-    height: 40vw;
-}
-
-.typeBlock {
-    align-self: flex-start;
-}
-
-.type {
-    background: url(img/amorous_alt_cd.jpg);
     background-size: cover;
-    background-position: center;
-    width: 48vw;
-    height: 32vw;
+    color:transparent;
 }
 
-.dlbWork {
-    display: flex;
-    justify-content: space-between;
-}
-
-.monoBlock {
-    display: inline-flex;
-    justify-self: flex-end;
+.lashbar:hover .projectInfo {
+    color: #fff;
+    mix-blend-mode: difference;
 }
 
 .mono {
+    width: 18vw;
+    height: 18vw;
     background: url(img/Frame%2039.svg);
-    background-size: cover;
     background-position: center;
-    width: 28vw;
-    height: 28vw;
-}
-
-.compBlock {
-    display: inline-flex;
-    align-self: flex-end;
-}
-
-.comp {
-    background: url(img/cfghj.svg);
     background-size: cover;
+    color: transparent;
+}
+
+.mono:hover {
+    background: none;
+    color: transparent;
+    background-color: #0C6CF2;
+}
+
+.mono:hover .projectInfo {
+    color: #fff;
+}
+
+.arkiva {
+    background: url(img/Zelus%20App%20Mock.jpg);
     background-position: center;
-    width: 56vw;
-    height: 38vw;
+    background-size: cover;
+    width: 18vw;
+    height: 18vw;
+	color: transparent;
 }
 
-.footer {
-    padding:3.75vw 7.5vw;
-	line-height: 140%;
-	color: #5E5C66;
-	display: flex;
-	justify-content: space-between;
-    align-items: center;
+.arkiva:hover .projectInfo {
+    color: #fff;
+    mix-blend-mode: difference;
 }
-
-.footer a{
-    color: #5E5C66;
-    text-decoration: none;
-}
-
-
-
-
-
-
 
