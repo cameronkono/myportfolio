@@ -6,8 +6,8 @@ $(document).ready(function(){
     bounce:0.5,
     damping:100,
 		impulse:{
-		f:250,
-		p:{x:40,y:20}
+		f:180,
+		p:{x:20,y:20}
     },
   });
 });

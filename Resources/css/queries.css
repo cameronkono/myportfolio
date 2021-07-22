@@ -28,14 +28,19 @@
     background: url(img/complio.png);
     background-position: center;
     background-size: cover;
-    color:transparent;
+    color: transparent;
+}
+
+.complio:hover {
+    background: none;
+    color: transparent;
+    background-color: #73E57C;
 }
 
 .complio:hover .projectInfo {
     color: #000;
 }
-
-
+  
 .amorous {
     background: url(img/amorous_alt_cd.jpg);
     background-position: center;
