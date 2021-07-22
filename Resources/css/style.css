@@ -170,11 +170,11 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
 	white-space: nowrap;
+    width: 100%;
 }
 
 .projectInfo p {
     line-height: 133%;
-	max-width: 40px;
 	margin-bottom: 15px;
 }
 
