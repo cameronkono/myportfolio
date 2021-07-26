@@ -160,6 +160,10 @@ h1 {
     cursor: grab;
 }
 
+.parent  {
+    position: fixed;
+}
+
 .throwable:hover {
    z-index: 14; 
 }
@@ -288,3 +292,20 @@ h1 {
     mix-blend-mode: difference;
 }
 
+.workRow {
+    margin: 2.5vw 5vw;
+}
+
+.squareImg {
+    background: url(img/zls_app_icon.jpg);
+    width: 20vw;
+    height: 20vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.desc {
+    width: 20vw;
+    margin-top: 1.25vw;
+    line-height: 133%;
+}
