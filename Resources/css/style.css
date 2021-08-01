@@ -1,311 +1,203 @@
 *{
-	margin:0;
-	padding:0;
+	margin: 0;
+  padding: 0;
 	box-sizing: border-box;
 }
-body,
-html {
-	font-family: 'ckmono';
-	background: #E6E6E6;
-	color: #000;
-	font-feature-settings: "ss02", "ss10";
-    overflow: hidden;
-    font-size: 12px;
-    font-weight: 300;
-}
 
-@font-face {
-    font-family: "arkivabig";
-    src: url(fonts/zelustitlingcut7-webfont.woff2);
+body {
+	background-color: white;
+    /*
+	-webkit-animation-name: changeColor;  
+	-webkit-animation-iteration-count: infinite;  
+	-webkit-animation-duration: 10s;
+    */
+	color:#000;
+  font-family: retail;
+	font-feature-settings:;
+	font-weight: 400;
+	font-size: 22px;
+	letter-spacing: ;
 }
+/*
+@-webkit-keyframes changeColor {  
+  0% { background-color: whitesmoke; }
+	25% { background-color: #E1F3DB; }
+  50% { background-color: #E2E2FA; }
+	75% { background-color: #FEF1E7; }
+  100% { background-color: whitesmoke; }
+}
+*/
 
-@font-face {
-    font-family: "arkiva";
-    src: url(fonts/zelustextcut8-regular-webfont.woff2), 
-         url(fonts/zelustextcut8-medium-webfont.woff2),
-         url(fonts/zelustextcut8-bold-webfont.woff2);
-}
 
-@font-face {
-    font-family: "ckmono";
-    src: url(fonts/mono3-300-webfont.woff2);
-}
-
-h1 {
-    font-family: 'ckmono';
-	letter-spacing: -0.03em;
-    font-size: 12px;
-    font-weight: 300;
-	font-feature-settings: "ss02", "ss10";
-}
+.blinkdiv {
+}   
 
 .nav {
-	width: 100vw;
-	padding: 2vw 3vw;
+	width:100vw;
+	position: fixed;
+	padding: 3vw 4vw;
 	display: flex;
-    position: fixed;
-    justify-content: space-between;
-    z-index: 15;
 	justify-content: space-between;
 	align-items: center;
+	top: 0;
 }
 
-.nav ul {
+.nav ul{
 	list-style: none;
 	display: flex;
 }
 
-.activeLink {
-    color: #000;
-}
-
-.nav a {
-	text-decoration: none;
-	color: gray;
+.nav li{
 	margin-left: 50px;
+	padding:  2px 0px;
 }
 
-.container {
-	background-color: white;
+.activeLink {
+	border-bottom: 1px solid black;
+}
+
+.nav li:hover {
 	cursor: pointer;
-	width: 80px;
-	height: 45px;
-	position: fixed;
-	right: 0;
-	bottom: 0;
-    margin: 2vw 3vw;
-	display: flex;
-    z-index: 20;
-	transform: translate(-0%, -0%);
-	border-radius: 80px;
-	overflow: hidden;
-	transition: 0.25s, margin 0.75s;
-    clip-path: url(#clip);
+	border-bottom: 1px solid black;
+}
+ 
+.container {
+  margin: 0 auto;
+    -webkit-animation-name: rotateSlow;  
+	-webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 40s; 
+  margin-top: 25vh;
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  perspective: 2000px;
 }
 
-.eye {
-	width: 40px;
-	height: 40px;
-	background: #000;
-	border: 10px solid #A699CC;
-	position: absolute;
-	border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 12px;
-    color:transparent;
-	transform: translate(-88%, -44%);
-	transition: margin .4s, border .4s, width .25s, height .25s, color 0.25s, font-size 0.4s;
+@-webkit-keyframes rotateSlow {  
+  0% { transform: rotate(8deg); }
+  50% { transform: rotate(-8deg); }
+  100% { transform: rotate(8deg); }
 }
-
-.container:hover .eye {
-	border: 0px solid black;
-	width: 55px;
-    color:white;
-    font-size: 30px;
-	height: 55px;
-    margin-left: 6px;
+ 
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
 }
-
-.lid {
-	height: 50%;
-	width: 100%;
-	position: absolute;
-	background: #333333;
-}
-
-.lid-top {
-	top: -50%;
-}
-
-.lid-bottom {
-	bottom: -50%;
-}
-
-.lid-go-down {
-	animation: lid-go-down .1s 2 alternate;
-}
-
-.lid-go-up {
-	animation: lid-go-up .1s 2 alternate;
-}
-
-@keyframes lid-go-down {
-	0% {
-		top: -50%;
-	}
-	100% {
-		top: 0;
-	}
-}
-
-@keyframes lid-go-up {
-	0% {
-		bottom: -50%;
-	}
-	100% {
-		bottom: 0;
-	}
-}
-
-.throwable {
-	display: inline-flex;
-    justify-content: flex-start;
-	width: auto;
-    align-items: flex-start;
-	color: #000;
-	border-radius: 10px;
-    cursor: grab;
-}
-
-.parent  {
-    position: fixed;
-}
-
-.throwable:hover {
-   z-index: 14; 
-}
-
-.throwable:focus,
-.throwable:active {
-    cursor: grabbing;
-}
-
-.projectInfo {
-	padding: 20px;
-    display: flex;
-    height: 100%;
+ 
+.item {
+  display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+	cursor: pointer;
+    padding: 2vw;
+  position: absolute;
+  background: #fff;
+	color: transparent;
+  width: 30vw;
+  height: 30vw;
+  line-height:90%;
+  font-size: 6vw;
+  font-weight: 500;
+  letter-spacing: -0.2vw;
+	border-radius: 5px;
 }
 
-.projectInfo p {
-    line-height: 133%;
+.item p {
+    font-size: 11px;
+    letter-spacing: 0.05vw;
+    line-height: 100%;
+    margin-bottom: 1vw;
+}
+ 
+.a {
+  transform: rotateY(0deg) translateZ(30vw);
+    background: url(img/Screen%20Shot%202021-07-31%20at%207.40.09%20PM.png);
+    background-position: center;
+    background-size: cover;
 }
 
-.roles {
-    margin-bottom: 10px;
+.a:hover {
+    background: #000;
+    color: #fff;
 }
 
-.link:hover {
-    text-decoration: underline;
-}
-
-.zelus {
+.b {
+  transform: rotateY(60deg) translateZ(30vw);
     background: url(img/zls.jpg);
     background-position: center;
     background-size: cover;
-    background-color: #FAE457;	
-    width: 36vw;
-    height: 24vw;
-    color: transparent;
 }
 
-.zelus:hover {
-    background: none;
-    background-color: #FAE457;
-    position: fixed;
-    right: 0;
-    color: #000;
+.b:hover {
+    background: #000;
+    color: #fff;
 }
-.complio {
-    width: 24vw;
-    height: 16vw;
+
+.c {
+  transform: rotateY(120deg) translateZ(30vw);
+    background: url(img/lz-biz-cards.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.c:hover {
+    background: #000;
+    color: #fff;
+}
+
+.d {
+  transform: rotateY(180deg) translateZ(30vw);
     background: url(img/complio.png);
     background-position: center;
     background-size: cover;
-    color: transparent;
 }
-
-.complio:hover {
-    background: none;
-    color: transparent;
-    background-color: #73E57C;
-}
-
-.complio:hover .projectInfo {
-    color: #000;
-}
-
-
-.amorous {
-    background: url(img/amorous_alt_cd.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 24vw;
-    height: 16vw;
-	color: transparent;
-}
-
-.amorous:hover .projectInfo {
-    color: #fff;
-    mix-blend-mode: difference;
-}
-
-.lashbar {
-    width: 30vw;
-    height: 20vw;
-    background: url(img/lb.jpg);
-    background-position: center;
-    background-size: cover;
-    color:transparent;
-}
-
-.lashbar:hover .projectInfo {
-    color: #fff;
-    mix-blend-mode: difference;
-}
-
-.mono {
-    width: 18vw;
-    height: 18vw;
-    background: url(img/Frame%2039.svg);
-    background-position: center;
-    background-size: cover;
-    color: transparent;
-}
-
-.mono:hover {
-    background: none;
-    color: transparent;
-    background-color: #0C6CF2;
-}
-
-.mono:hover .projectInfo {
+.d:hover {
+    background: #000;
     color: #fff;
 }
 
-.arkiva {
-    background: url(img/zls_yellow_app_screens.jpg);
+.e {
+  transform: rotateY(240deg) translateZ(30vw);
+        background: url(img/amorous_alt_cd.jpg);
     background-position: center;
     background-size: cover;
-    width: 24vw;
-    height: 18vw;
-	color: transparent;
-}
-
-.arkiva:hover .projectInfo {
+} 
+.e:hover {
+    background: #000;
     color: #fff;
-    mix-blend-mode: difference;
 }
 
-.workRow {
-    margin: 2.5vw 5vw;
-}
-
-.squareImg {
-    background: url(img/zls_app_icon.jpg);
-    width: 20vw;
-    height: 20vw;
+.f {
+  transform: rotateY(300deg) translateZ(30vw);
+    background: url(img/eyedemi.jpg);
     background-position: center;
     background-size: cover;
 }
-
-.desc {
-    width: 20vw;
-    margin-top: 1.25vw;
-    line-height: 133%;
+ 
+.f:hover {
+    background: #000;
+    color: #fff;
 }
+
+.next, .prev {
+  position: absolute;
+	background-color: #000;
+	color: #fff;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	border-radius: 40px;
+	align-items: center;
+	width: 40px;
+  bottom: 50vh;
+  cursor: pointer;
+}
+.next:hover, 
+.prev:hover { 
+  color: grey;
+}
+
+.next { right: 4vw; }
+.prev { left: 4vw; }
