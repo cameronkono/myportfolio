@@ -1,4 +1,4 @@
-$(function() { 
+$(document).ready(function() { 
  var carousel = $(".carousel"),
     currdeg  = 0;
 $(".next").on("click", { d: "n" }, rotate);
@@ -12,10 +12,8 @@ function rotate(e){
     currdeg = currdeg + 60;
   }
   carousel.css({
-    "-webkit-transform": "rotateY("+currdeg+"deg)",
-    "-moz-transform": "rotateY("+currdeg+"deg)",
-    "-o-transform": "rotateY("+currdeg+"deg)",
-    "transform": "rotateY("+currdeg+"deg)"
+    "-webkit-transform": "rotateX("+currdeg+"deg)",
+    "transform": "rotateX("+currdeg+"deg)"
   });
 }
 });

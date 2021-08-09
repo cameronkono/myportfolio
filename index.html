@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
         <title>Cameron Kono</title>
         
@@ -13,11 +13,7 @@
         
         <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        
-        <script  src="https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
         <script src="Resources/js/script.js"></script>
 
@@ -26,26 +22,60 @@
     </head>
     
     <body>
+        <div class="nav navcarousel">
+            <ul>
+                <li><span class=activeLink>Work</span></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <a href="index.html"><div class=logo>Cameron Kono</div></a>
+        </div>
+        <div class="mastercont">
+        <div class="container">
+          <div class="carousel">
+            <a href=zelus.html><div class="item a"><h1>Zelus</h1><p>Logo / Identity / UI&#38;UX</p></div></a>
+            <a href="http://www.zelusfit.com"><div class="item b"><h1>ALF Mono</h1><p>Type Design</p></div></a>
+            <a href="http://www.mono.de/"><div class="item c"><h1>Lashbar Salons</h1><p>Logo / Identity</p></div></a>
+            <a href="http://www.mono.de/"><div class="item d"><h1>Amorous: Fling</h1><p>Packaging / Album Cover</p></div></a>
+            <a href="http://www.mono.de/"><div class="item e"><h1>ALF Chubb (WIP)</h1><p>Type Design</p></div></a>
+            <a href="http://www.mono.de/"><div class="item f"><h1>Archive</h1></div></a>
+          </div>
+        </div>
+        </div>	
+        <div class="mobileWork"></div>
 
-       <div class=nav>
-	<div class=logo>Cameron</div>
-	<ul>
-		<li class=activeLink>Projects</li>
-		<li>Profile</li>
-	</ul>
-</div>
-<div class="container">
-  <div class="carousel">
-    <div class="item a">ALF<br>Retail</div>
-    <div class="item b"><p>LOGO / IDENTITY / TYPEFACE / UX &#38; UI</p>ZelusFit</div>
-    <div class="item c"><p>LOGO / IDENTITY</p>Lashbar<br>Salons</div>
-    <div class="item d">Complio</div>
-    <div class="item e"><p>PACKAGING</p>Amorous:<br>Fling</div>
-    <div class="item f">Archive<br>&#38; Other</div>
-  </div>
-</div>
-<div class="next">→</div>
-<div class="prev">←</div>
+        <div class="leftControlCont">
+            <div class="prev">
+                <div class="prevIndicator">Prev
+                </div>
+            </div>
+        </div>
+
+        <div class="rightControlCont">
+            <div class="next">
+                <div class="nextIndicator">Next
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            $('.prev').on({
+  mousemove: function(e) {
+    $('.prevIndicator').css({
+      left: e.pageX,
+      top: e.pageY
+    })
+  }
+});
+
+$('.next').on({
+  mousemove: function(e) {
+    $('.nextIndicator').css({
+      left: e.pageX,
+      top: e.pageY
+    })
+  }
+});
+        </script>
     </body>
     
 </html>

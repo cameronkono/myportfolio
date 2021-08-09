@@ -1,4 +1,26 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 1120px) {
+    .mastercont {
+        display: none;
+    }
     
+    .leftControlCont {
+        display: none;
+    }
+    
+    .rightControlCont {
+        display: none;
+    }
+    
+    .nav li{
+        margin-right: 8vw;
+        padding:  2px 0px;
+    }
+    
+    .desc {
+        line-height: 150%;
+    }
 
+    .footer p {
+        width: 100vw;
+    }
 }
