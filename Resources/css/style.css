@@ -7,8 +7,7 @@
 body {
 	background-color: #000;
 	color:#fff;
-    font-family: mono3;
-    font-weight: 200;
+    font-family: ckmono;
 	font-feature-settings: "ss02";
 	font-size: 13px;
     line-height: 133%;  
@@ -17,6 +16,12 @@ body {
 ::selection {
     background: whitesmoke;
     color:#000;/* WebKit/Blink Browsers */
+}
+
+
+@font-face {
+    font-family: "ckmono";
+    src: url(fonts/mono3-300-webfont.woff2);
 }
 
 .nextIndicator::selection,
