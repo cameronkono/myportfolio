@@ -8,6 +8,7 @@ body {
 	background-color: #000;
 	color:#fff;
   font-family: ckmono;
+    text-rendering: geometricPrecision;
 	font-size: 14px;
   line-height: 133%;
 	overflow:auto;
