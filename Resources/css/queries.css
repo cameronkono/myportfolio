@@ -1,4 +1,4 @@
-@media all and (max-width: 680px) {
+@media all and (max-width: 600px) {
 
     .nav {
         padding: 8vw 8vw;
@@ -13,39 +13,82 @@
       width: 0px;
     }
     
-    .container {  
-        width: 60vw;
-        height: 40vw;
-        margin-top: -40px;
-    }
     
-    .item {
-        width: 60vw;
-        height: 40vw;
-    }
+    
+    
+.container {  
+    margin: 0 auto;
+    display: flex;
+    width: 60vw;
+    height: 75vw;
+    transform-style: preserve-3d;
+    position: relative;
+	-webkit-animation-name: rotateSlow;  
+	-webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 20s; 
+    perspective: 2000px;
+}
+    
+
+.item {
+    width: 60vw;
+    height: 75vw;
+}
+
+.item p{
+    margin-bottom: 5px;
+    font-size: 8px;
+}
+
+.projinfo {
+    width: 300px;
+}
+
+
+.carousel a {
+	text-decoration: none;
+	color: #000;
+}
+
+.overlay {
+    width: 60vw;
+    height: 60vw;
+}
+
+.c video {
+    width: 60vw;
+    height: 60vw;
+    object-fit: cover;
+    z-index: 0;
+}
+
+    
+    
+    
+    
     
     .a {
-        transform: rotateX(0deg) translateZ(38vw);
+        transform: rotateX(0deg) translateZ(80vw);
     }
 
     .b {
-        transform: rotateX(60deg) translateZ(38vw);
+        transform: rotateX(60deg) translateZ(80vw);
     }
 
     .c {
-        transform: rotateX(120deg) translateZ(38vw);
+        transform: rotateX(120deg) translateZ(80vw);
     }
 
     .d {
-        transform: rotateX(180deg) translateZ(38vw);
+        transform: rotateX(180deg) translateZ(80vw);
     }
 
     .e {
-        transform: rotateX(240deg) translateZ(38vw);
+        transform: rotateX(240deg) translateZ(80vw);
     }
     
     .f {
-        transform: rotateX(300deg) translateZ(38vw);
+        transform: rotateX(300deg) translateZ(80vw);
     }
     
     .desc {
