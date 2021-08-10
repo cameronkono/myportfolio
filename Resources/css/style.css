@@ -103,8 +103,7 @@ body::-webkit-scrollbar {
     100% { transform: rotateZ(5deg);}
 }
 
-.container {
-    
+.container {  
     margin: 0 auto;
     width: 36vh;
     height: 24vh;

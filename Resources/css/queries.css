@@ -1,16 +1,42 @@
 @media all and (max-width: 1120px) {
-    
-    .leftControlCont {
-        display: none;
-    }
-    
-    .rightControlCont {
-        display: none;
-    }
-    
+
     .nav li{
         margin-right: 8vw;
         padding:  2px 0px;
+    }
+    
+    .container {  
+        width: 30vh;
+        height: 20vh;
+    }
+    
+    .item {
+        width: 30vh;
+        height: 20vh;
+    }
+    
+    .a {
+        transform: rotateX(0deg) translateZ(20vh);
+    }
+
+    .b {
+        transform: rotateX(60deg) translateZ(20vh);
+    }
+
+    .c {
+        transform: rotateX(120deg) translateZ(20vh);
+    }
+
+    .d {
+        transform: rotateX(180deg) translateZ(20vh);
+    }
+
+    .e {
+        transform: rotateX(240deg) translateZ(20vh);
+    }
+    
+    .f {
+        transform: rotateX(300deg) translateZ(20vh);
     }
     
     .desc {
