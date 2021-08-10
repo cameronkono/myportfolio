@@ -72,23 +72,23 @@
     }
 
     .b {
-        transform: rotateX(60deg) translateZ(70vw);
+        transform: rotateX(-60deg) translateZ(70vw);
     }
 
     .c {
-        transform: rotateX(120deg) translateZ(70vw);
+        transform: rotateX(-120deg) translateZ(70vw);
     }
 
     .d {
-        transform: rotateX(180deg) translateZ(70vw);
+        transform: rotateX(-180deg) translateZ(70vw);
     }
 
     .e {
-        transform: rotateX(240deg) translateZ(70vw);
+        transform: rotateX(-240deg) translateZ(70vw);
     }
     
     .f {
-        transform: rotateX(300deg) translateZ(70vw);
+        transform: rotateX(-300deg) translateZ(70vw);
     }
     
     .desc {

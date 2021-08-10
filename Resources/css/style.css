@@ -229,24 +229,24 @@ height: 0;
 }
 
 .b {
-    transform: rotateX(60deg) translateZ(25vw);
+    transform: rotateX(-60deg) translateZ(25vw);
 }
 
 .c {
-    transform: rotateX(120deg) translateZ(25vw);
+    transform: rotateX(-120deg) translateZ(25vw);
 }
 
 .d {
-    transform: rotateX(180deg) translateZ(25vw);
+    transform: rotateX(-180deg) translateZ(25vw);
 }
 
 .e {
-    transform: rotateX(240deg) translateZ(25vw);
+    transform: rotateX(-240deg) translateZ(25vw);
 	
 }
 
 .f {
-    transform: rotateX(300deg) translateZ(25vw);
+    transform: rotateX(-300deg) translateZ(25vw);
 }
 
 
