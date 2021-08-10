@@ -8,10 +8,13 @@ body {
 	background-color: #000;
 	color:#fff;
   font-family: ckmono;
-	font-size: 13px;
+	font-size: 14px;
   line-height: 133%;
 	overflow:auto;
 }
+
+/*------------------------------------*/
+/*--GLOBAL----------------------------*/
 
 @font-face {
     font-family: "ckmono";
@@ -22,31 +25,16 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.hint {
-    color: grey;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-    margin-bottom: 4vh;
-    position: fixed;
-}
-
 ::selection {
     background: whitesmoke;
     color:#000;/* WebKit/Blink Browsers */
 }
 
-.nextIndicator::selection,
-.prevIndicator::selection{
-    background: transparent;
-    color:white;/* WebKit/Blink Browsers */
-}
-
 .blinkdiv {
 }   
 
-/*----------------*/
-/*--NAV--*/
+/*------------------------------------*/
+/*--NAV-------------------------------*/
 
 .nav {
 	width:100vw;
@@ -90,8 +78,13 @@ body::-webkit-scrollbar {
 .nav .li .activeLink:hover {
 }
 
-/*----------------*/
-/*--CAROUSEL--*/
+/*------------------------------------*/
+/*--CAROUSEL--------------------------*/
+
+.long {
+    height: 10000px;
+    background-position: top center;
+}
  
 .mastercont {
 	height: 100vh;
@@ -159,17 +152,6 @@ body::-webkit-scrollbar {
 	text-decoration: none;
 	color: #000;
 }
-
-.item p {
-    font-size: 10px;
-}
-
-h1 {
-    font-size: 22px;
-    font-style: normal;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
  
 .a {
     transform: rotateX(0deg) translateZ(24vh);
@@ -197,15 +179,24 @@ background-color: whitesmoke;
 	
 }
 
+.e p {
+    display: none;
+    font-size: 10px;	
+}
+
 .f {
     transform: rotateX(300deg) translateZ(24vh);
     background-color: orangered;
 }
 
 .e:hover {
-    color: dimgray;
-    background: none;
-    background-color: grey;
+    color: gray;
+    background-color: #222;
+    border: 1px solid #333;
+}
+
+.e:hover p {
+    display: block;
 }
 
 .a:hover,
@@ -214,12 +205,21 @@ background-color: whitesmoke;
 .d:hover,
 .f:hover{
     color: white;
-    background: none;
-    background-color: #111;
+    background-color: black;
+    border: 1px solid #222;
 }
 
-/*----------------*/
-/*--WORK PAGES--*/
+.hint {
+    color: grey;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 4vh;
+    position: fixed;
+}
+
+/*------------------------------------*/
+/*--WORK PAGES------------------------*/
 
 .row {
     width: 100vw;
@@ -322,11 +322,6 @@ background-color: whitesmoke;
     height: 300px;
     background: white;
     position: fixed;
-}
-
-.long {
-    height: 10000px;
-    background-position: top center;
 }
 
 .testo {
