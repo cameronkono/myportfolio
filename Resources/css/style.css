@@ -180,13 +180,13 @@ height: 0;
 }
 
 .a .overlay{
-    background: gold; 
+    background: url(img/zlscover.jpg); 
     background-size: cover;
     background-position: center;
 }
 
 .b .overlay{
-    background: dodgerblue; 
+    background: url(img/mono.png); 
     background-size: cover;
     background-position: center;
 }
@@ -206,13 +206,13 @@ height: 0;
 }
 
 .d .overlay{
-    background: purple; 
+    background: url(img/lz-biz-cards.jpg); 
     background-size: cover;
     background-position: center;
 }
 
 .e .overlay{
-    background: whitesmoke; 
+    background: url(img/compliodark.png); 
     background-size: cover;
     background-position: center;
 }
