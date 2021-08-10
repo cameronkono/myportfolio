@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
+        <title>Cameron Kono</title>
+        
+<!--STYLESHEETS/FONTS-->
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="Resources/js/script.js"></script>
+        <script src="Resources/js/infiniteScroll.js"></script>
+        
+
+<!--FAVICONS-->
+        
+    </head>
+    
+    <body>
+        <div class=nav>
+            <ul>
+                <li class="activeLink"><a href="index.html">Work</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <a href="index.html"><div class=logo>Cameron Kono</div></a>
+        </div>
+        <div class=mastercont>
+        <div class="container">
+            <div class="carousel" id="leftgear">
+                <a href=link.html><div class="item a">Zelus Fit</div></a>
+                <a href=link.html><div class="item b">Amorous</div></a>
+                <a href=link.html><div class="item c">The Thing</div></a>
+                <a href=link.html><div class="item d">Mama Sugar</div></a>
+                <a href=link.html><div class="item e">Comlol</div></a>
+                <a href=link.html><div class="item f">heheidk</div></a>
+            </div>
+        </div>
+        </div>    
+        <script>
+        
+var leftgear = document.getElementById("leftgear");
+    
+window.addEventListener("scroll", function() {
+    leftgear.style.transform = "rotateX("+window.pageYOffset/13.9+"deg)";
+});
+        
+        </script>
+        <div class="long"></div>
+    </body>
+    
+</html>

@@ -10,8 +10,9 @@ body {
     font-family: ckmono;
 	font-feature-settings: "ss02";
 	font-size: 13px;
-    line-height: 133%;  
+    line-height: 133%;
 }
+
 
 ::selection {
     background: whitesmoke;
@@ -85,10 +86,19 @@ body {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
+    position: fixed;
 	align-items: center;
     -webkit-animation-name: rotateZ;  
 	-webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 20s; 
+}
+
+.mycont {
+    height: 100vh;
+	width: 100vw;
+    display: flex;
+    position: fixed;
+    align-items: center;
 }
 
 @-webkit-keyframes rotateZ {  
@@ -100,10 +110,10 @@ body {
 .container {
     
     margin: 0 auto;
-    width: 54vh;
-    height: 36vh;
+    width: 36vh;
+    height: 24vh;
+    transform-style: preserve-3d;
     position: relative;
-	transform-style: preserve-3d;
 	-webkit-animation-name: rotateSlow;  
 	-webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 20s; 
@@ -126,8 +136,6 @@ body {
 	-webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 30s; 
     transform-style: preserve-3d;
-	-webkit-transition: transform 1s;
-    transition: transform 1s;
 } 
 
 .item {
@@ -136,8 +144,8 @@ body {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    width: 54vh;
-    height: 36vh;
+    width: 36vh;
+    height: 24vh;
     position: absolute;
     background: #000;
     text-align: center;
@@ -161,7 +169,7 @@ h1 {
 }
  
 .a {
-    transform: rotateX(0deg) translateZ(34vh);
+    transform: rotateX(0deg) translateZ(24vh);
     background: url(img/zlscover.jpg);
     background-position: center;
     background-size: cover;
@@ -169,7 +177,7 @@ h1 {
 }
 
 .b {
-    transform: rotateX(60deg) translateZ(34vh);
+    transform: rotateX(60deg) translateZ(24vh);
     background: url(img/mono.png);
     background-position: center;
     background-size: cover;
@@ -177,7 +185,7 @@ h1 {
 }
 
 .c {
-    transform: rotateX(120deg) translateZ(34vh);
+    transform: rotateX(120deg) translateZ(24vh);
     background: url(img/lb.jpg);
     background-position: center;
     background-size: cover;
@@ -185,7 +193,7 @@ h1 {
 }
 
 .d {
-    transform: rotateX(180deg) translateZ(34vh);
+    transform: rotateX(180deg) translateZ(24vh);
     background: url(img/compliodark.png);
     background-position: center;
     background-size: cover;
@@ -193,7 +201,7 @@ h1 {
 }
 
 .e {
-    transform: rotateX(240deg) translateZ(34vh);
+    transform: rotateX(240deg) translateZ(24vh);
     background: url(img/chubbo.png);
     background-position: center;
     background-size: cover;
@@ -201,7 +209,7 @@ h1 {
 }
 
 .f {
-    transform: rotateX(300deg) translateZ(34vh);
+    transform: rotateX(300deg) translateZ(24vh);
     background-color: #f0f0f0;
 }
 
@@ -295,6 +303,10 @@ h1 {
     color: grey;
 }
 
+.halfRow {
+    width: 40vw;
+}
+
 .title {
     width: 21vw;
     
@@ -306,7 +318,7 @@ h1 {
 }
 
 .desc {
-    width: 21vw;
+    width: 40vw;
 }
 
 .activeLink span {
@@ -356,13 +368,13 @@ h1 {
     max-height: 100%;
 }
 
-.squareImg {
+.halfImg {
     margin-left: 8vw;
-    width: 56vw;
+    width: 84vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 56vw;
+    height: 42vw;
 }
 
 .halfRow {
@@ -374,4 +386,22 @@ h1 {
     width: 100vw;
     padding: 8vw;
     margin-top: 8vw;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background: white;
+    position: fixed;
+}
+
+.long {
+    height: 10000px;
+    background-position: top center;
+}
+
+.testo {
+    height: 400vh;
+    width: 100vw;
+    background: linear-gradient(#e66465, #9198e5);
 }
