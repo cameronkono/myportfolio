@@ -11,6 +11,10 @@ body {
 	font-size: 14px;
   line-height: 133%;
 	overflow:auto;
+    .scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
 }
 
 /*------------------------------------*/
@@ -22,8 +26,10 @@ body {
 }
 
 html::-webkit-scrollbar {
-  width: 0px;
+    display: none;
 }
+
+
 
 ::selection {
     background: whitesmoke;
