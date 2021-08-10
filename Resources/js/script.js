@@ -1,19 +1,16 @@
-$(document).ready(function() { 
- var carousel = $(".carousel"),
-    currdeg  = 0;
-$(".next").on("click", { d: "n" }, rotate);
-$(".prev").on("click", { d: "p" }, rotate);
- 
-function rotate(e){
-  if(e.data.d=="n"){
-    currdeg = currdeg - 60;
-  }
-  if(e.data.d=="p"){
-    currdeg = currdeg + 60;
-  }
-  carousel.css({
-    "-webkit-transform": "rotateX("+currdeg+"deg)",
-    "transform": "rotateX("+currdeg+"deg)"
-  });
-}
+var bgHeight = 10000; // pixel height of background image
+
+$(document).ready(function() {   
+    $('body').height( bgHeight + $(window).height() );
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() >= ($('body').height() - $(window).height()) ) {
+            $(window).scrollTop(1);
+        }
+        else if ( $(window).scrollTop() == 0 ) {
+            $(window).scrollTop($('body').height() - $(window).height() -1);
+        }    
+    });
+});
+$(window).resize(function() {
+    $('body').height( bgHeight + $(window).height() );
 });
