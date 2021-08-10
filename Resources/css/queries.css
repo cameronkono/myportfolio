@@ -1,11 +1,11 @@
 @media all and (max-width: 600px) {
 
     .nav {
-        padding: 4vw 8vw;
+        padding: 4vw 4vw;
     }
     
     .nav li{
-        margin-right: 8vw;
+        margin-right: 4vw;
         padding:  2px 0px;
     }
     
