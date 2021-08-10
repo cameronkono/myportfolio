@@ -1,4 +1,4 @@
-@media all and (max-width: 720px) {
+@media all and (max-width: 680px) {
 
     .nav {
         padding: 8vw 8vw;
@@ -14,38 +14,38 @@
     }
     
     .container {  
-        width: 54vw;
-        height: 36vw;
+        width: 60vw;
+        height: 40vw;
         margin-top: -40px;
     }
     
     .item {
-        width: 54vw;
-        height: 36vw;
+        width: 60vw;
+        height: 40vw;
     }
     
     .a {
-        transform: rotateX(0deg) translateZ(34vw);
+        transform: rotateX(0deg) translateZ(38vw);
     }
 
     .b {
-        transform: rotateX(60deg) translateZ(34vw);
+        transform: rotateX(60deg) translateZ(38vw);
     }
 
     .c {
-        transform: rotateX(120deg) translateZ(34vw);
+        transform: rotateX(120deg) translateZ(38vw);
     }
 
     .d {
-        transform: rotateX(180deg) translateZ(34vw);
+        transform: rotateX(180deg) translateZ(38vw);
     }
 
     .e {
-        transform: rotateX(240deg) translateZ(34vw);
+        transform: rotateX(240deg) translateZ(38vw);
     }
     
     .f {
-        transform: rotateX(300deg) translateZ(34vw);
+        transform: rotateX(300deg) translateZ(38vw);
     }
     
     .desc {
