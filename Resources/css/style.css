@@ -21,8 +21,8 @@ body {
     src: url(fonts/mono3-300-webfont.woff2);
 }
 
-body::-webkit-scrollbar {
-  display: none;
+html::-webkit-scrollbar {
+  width: 0px;
 }
 
 ::selection {

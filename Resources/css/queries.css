@@ -1,13 +1,22 @@
 @media all and (max-width: 1120px) {
 
+    .nav {
+        padding: 8vw 8vw;
+    }
+    
     .nav li{
         margin-right: 8vw;
         padding:  2px 0px;
     }
     
+    html::-webkit-scrollbar {
+      width: 0px;
+    }
+    
     .container {  
         width: 54vw;
         height: 36vw;
+        margin-top: -40px;
     }
     
     .item {
