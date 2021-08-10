@@ -6,37 +6,37 @@
     }
     
     .container {  
-        width: 30vh;
-        height: 20vh;
+        width: 54vw;
+        height: 36vw;
     }
     
     .item {
-        width: 30vh;
-        height: 20vh;
+        width: 54vw;
+        height: 36vw;
     }
     
     .a {
-        transform: rotateX(0deg) translateZ(20vh);
+        transform: rotateX(0deg) translateZ(34vw);
     }
 
     .b {
-        transform: rotateX(60deg) translateZ(20vh);
+        transform: rotateX(60deg) translateZ(34vw);
     }
 
     .c {
-        transform: rotateX(120deg) translateZ(20vh);
+        transform: rotateX(120deg) translateZ(34vw);
     }
 
     .d {
-        transform: rotateX(180deg) translateZ(20vh);
+        transform: rotateX(180deg) translateZ(34vw);
     }
 
     .e {
-        transform: rotateX(240deg) translateZ(20vh);
+        transform: rotateX(240deg) translateZ(34vw);
     }
     
     .f {
-        transform: rotateX(300deg) translateZ(20vh);
+        transform: rotateX(300deg) translateZ(34vw);
     }
     
     .desc {
