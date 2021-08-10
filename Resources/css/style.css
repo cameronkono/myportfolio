@@ -111,8 +111,8 @@ html::-webkit-scrollbar {
 
 .container {  
     margin: 0 auto;
-    width: 36vh;
-    height: 24vh;
+    width: 45vh;
+    height: 30vh;
     transform-style: preserve-3d;
     position: relative;
 	-webkit-animation-name: rotateSlow;  
@@ -145,8 +145,8 @@ html::-webkit-scrollbar {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    width: 36vh;
-    height: 24vh;
+    width: 45vh;
+    height: 30vh;
     position: absolute;
     background: #000;
     text-align: center;
@@ -159,27 +159,27 @@ html::-webkit-scrollbar {
 }
  
 .a {
-    transform: rotateX(0deg) translateZ(24vh);
+    transform: rotateX(0deg) translateZ(28vh);
     background-color: limegreen;
 }
 
 .b {
-    transform: rotateX(60deg) translateZ(24vh);
+    transform: rotateX(60deg) translateZ(28vh);
     background-color: dodgerblue;
 }
 
 .c {
-    transform: rotateX(120deg) translateZ(24vh);
+    transform: rotateX(120deg) translateZ(28vh);
     background-color: gold;
 }
 
 .d {
-    transform: rotateX(180deg) translateZ(24vh);
+    transform: rotateX(180deg) translateZ(28vh);
     background-color: #9c4be7;
 }
 
 .e {
-    transform: rotateX(240deg) translateZ(24vh);
+    transform: rotateX(240deg) translateZ(28vh);
 background-color: whitesmoke;
 	
 }
@@ -190,7 +190,7 @@ background-color: whitesmoke;
 }
 
 .f {
-    transform: rotateX(300deg) translateZ(24vh);
+    transform: rotateX(300deg) translateZ(28vh);
     background-color: orangered;
 }
 
