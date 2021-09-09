@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
+        <title>Cameron Kono - Archive</title>
+        
+<!--STYLESHEETS/FONTS-->
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="Resources/js/script.js"></script>
+
+<!--FAVICONS-->
+        
+    </head>
+    
+    <body>
+        <div class="nav" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono <span class="greyTxt">→ Archive</span></div></a>
+            <ul>
+                <li class="activeLink"><a href="index.html">Work</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            var lastScrollTop = 0;
+            $(window).scroll(function(){
+              var st = $(this).scrollTop();
+              var nav = $('.nav');
+              setTimeout(function(){
+                if (st > lastScrollTop){
+                  $('#nav').addClass('hidden');
+                } else {
+                  $('#nav').removeClass('hidden');
+                }
+                lastScrollTop = st;
+              }, 100);
+            });
+        </script>
+        
+        <div class="wideImg firstImg"><img src="Resources/css/archimg/arch_gif"></div>
+        
+        <div class="stickyRow sans">
+            <p class="third">Archive
+            </p>
+            <p class=third>Past to present.</p>
+        </div>
+        
+        <div class=row>
+            <p class=first>Type Design<br>Logos<br>Illustration<br> Photography</p>
+            <p class=second></p>
+            
+            <p class=third>This page is a collection of various things and projects that I've worked on, like in-progress type design/type drawing exercises, old/unused logos, digital illustrations and some surf photos from my water-photography days.</p>
+        </div>
+
+        <div class="wideImg"><img src="Resources/css/archimg/amoeba.jpg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/archimg/eye_black_bg.jpg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/archimg/tearsmult-03%20copy.jpg"></div>
+        
+        <div class="offsetImgLeft">
+            <img src="Resources/css/archimg/anda.svg">
+            <div>Anda Yoga<br>Custom Logotype — 2021</div>
+        </div>
+        
+        <div class="offsetImgRight">
+            <img src="Resources/css/archimg/QO.svg">
+            <div>Quest Of<br>Monogram — 2020</div>
+        </div>
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/Market.svg">
+        </div>     
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/mono.svg">
+        </div>
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/cirocca.svg">
+        </div>
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/human.svg">
+        </div>   
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/wave_bw.png">
+        </div>
+        
+        <div class="wideImg">
+            <img src="Resources/css/archimg/roy+lauren.png">
+        </div>
+        
+        <div class=wideImg>
+            <img src="Resources/css/archimg/aerial.png">
+        </div>
+        
+        <div class="row">
+            <a href=index.html><div class="back">← Back</div></a>
+            <p class=third></p>
+        </div>
+        
+        <div class=footer>
+            <p>©2021 Cameron Kono</p>
+        </div>
+        
+    </body>
+    
+</html>

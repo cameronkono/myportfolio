@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
+        <title>Cameron Kono - Amorous</title>
+        
+<!--STYLESHEETS/FONTS-->
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="Resources/js/script.js"></script>
+
+<!--FAVICONS-->
+        
+    </head>
+    
+    <body class="amorous">
+        <div class="nav zls" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono</div></a>
+            <ul>
+                <li class="activeLink"><a href="index.html">Work</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            var lastScrollTop = 0;
+            $(window).scroll(function(){
+              var st = $(this).scrollTop();
+              var nav = $('.nav');
+              setTimeout(function(){
+                if (st > lastScrollTop){
+                  $('#nav').addClass('hidden');
+                } else {
+                  $('#nav').removeClass('hidden');
+                }
+                lastScrollTop = st;
+              }, 100);
+            });
+        </script>
+        
+        <div class="wideImg firstImg"><img src="Resources/css/amimg/amorous_cd.jpg"></div>
+        
+        <div class="stickyRow amorous">
+            <p class="third">Amorous</p>
+            <p class=third>Walls of Sound.</p>
+        </div>
+        
+        <div class=row>
+            <p class=first>Illustration<br>Packaging</p>
+            <p class=second></p>
+            <p class=third>Amorous is the musical project of Alec Young, based in Washington DC. Velvety distortion and reverb-drenched vocals conjure a daydream-like quality. After playing together in another musical project, Alec reached out to create an alubm cover for his next solo album, Sitting Pretty.<br><br>Through a mix of phsyical 'filters', like a faceted glass lens and photocopy warping, a photo of his back lawn (where Alec likes to write music in good weather) planter was altered to achieve a cover that was uniquely Amorous — heavily layered, organic and noise-drenched. A dark red was chosen as the accent and cassette color, matching Alec's 1966 Candy Apple Red Jaguar, the main tool used to create his sound.</p>
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/amimg/amorous_texture.jpg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/amimg/amorous_cassette.jpg"></div>
+        
+        <div class="row">
+            <a href=index.html><div class="back">← Back</div></a>
+            <p class=third></p>
+        </div>       
+                
+        <div class=footer>
+            <p>©2021 Cameron Kono</p>
+        </div>
+    </body>
+    
+</html>

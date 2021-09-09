@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
+        <title>Cameron Kono - Sans &#8470;5</title>
+        
+<!--STYLESHEETS/FONTS-->
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="Resources/js/script.js"></script>
+
+<!--FAVICONS-->
+        
+    </head>
+    
+    <body>
+        <div class="nav" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono <span class="greyTxt">→ Sans &#8470;5</span></div></a>
+            <ul>
+                <li class="activeLink"><a href="index.html">Work</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+        
+        <script>
+            var lastScrollTop = 0;
+            $(window).scroll(function(){
+              var st = $(this).scrollTop();
+              var nav = $('.nav');
+              setTimeout(function(){
+                if (st > lastScrollTop){
+                  $('#nav').addClass('hidden');
+                } else {
+                  $('#nav').removeClass('hidden');
+                }
+                lastScrollTop = st;
+              }, 100);
+            });
+        </script>
+        
+        <div class="wideImg firstImg"><img src="Resources/css/rtimg/1.svg"></div>
+        
+        <div class="stickyRow sans">
+            <p class="third">Sans &#8470;5
+            </p>
+            <p class=third>Explorations of the neo-grotesque genre.</p>
+        </div>
+        
+        <div class=row>
+            <p class=first>Type Design</p>
+              <p class=second></p>
+            
+            <p class=third>Sans &#8470;5 is a neo-grotesque I designed to meet modern requirements of a sans-typeface and for use in my own applications. This typeface takes inspiration from the neutrality and rationality of Swiss neo-grotesque typefaces, while retaining a warmth reminiscent of the geometric sans genre. This typeface is still a work in progress, with more weights, axes and italics coming soon.<br><br>Current Version: v.004<br><br><a href="archive.html"><span class=underline>Head to the <span class=underlineThis>archive</span> to see more type design. <span class=hideShow>→</span></span></a></p>
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/rtimg/rtl_a.svg"></div>
+        
+        <div class="dblImg">
+            <img class=imgMargin src="Resources/css/rtimg/sans_weights.svg">
+            <img class=imgMargin src="Resources/css/rtimg/R_gif">
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/rtimg/alphabet.svg"></div>
+        
+        <div class="dblImg">
+            <img class=imgMargin src="Resources/css/rtimg/aflex.svg">
+            <img class=imgMargin src="Resources/css/rtimg/arrows.svg">
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/rtimg/subway.svg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/rtimg/alternates.svg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/rtimg/alt_gif"></div>
+                
+        <div class="row">
+            <a href=index.html><div class="back">← Back</div></a>
+            <p class=third></p>
+        </div>
+        
+        <div class=footer>
+            <p>©2021 Cameron Kono</p>
+        </div>
+        
+    </body>
+    
+</html>

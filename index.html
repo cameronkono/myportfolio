@@ -15,7 +15,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        <script src="Resources/js/script.js"></script>
+        <script src="Resources/js/infinitescroll.js"></script>
         
 
 <!--FAVICONS-->
@@ -23,76 +23,97 @@
     </head>
     
     <body>
-                <div class="nav workpage">
+        <div class="nav navCaro" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono</div></a>
             <ul>
                 <li class="activeLink"><a href="index.html">Work</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
-            <a href="index.html"><div class=logo>Cameron Kono</div></a>
         </div>
+        
         <div class=mastercont>
-        <div class="container">
-            <div class="carousel" id="leftgear">
-                <a href=zelus.html target="_blank">
-                    <div class="item a">
-                        <div class="overlay">
+            
+            <div class="container">
+
+                <div class="carousel" id="leftgear">
+
+                    <a href="zelus.html">
+                        <div class="item a">
+                            <div class="itemImg itemImgA">
+                                <div class="projectName">Zelus</div>
+                                <div class=roles>
+                                    <div class="">Logo</div>
+                                    <div>Branding</div>
+                                    <div>UI&amp;UX</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class=projinfo>
-                            <p>Logo, Branding, UI&amp;UX, Type Design</p>Zelus
+                    </a>
+
+                    <a href="lashbar.html">
+                        <div class="item b">
+                            <div class="itemImg itemImgB">
+                                <div class="projectName">Lashbar</div>
+                                <div class=roles>
+                                    <div class="">Logo</div>
+                                    <div>Branding</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="https://www.google.com/">
-                    <div class="item b">
-                        <div class="overlay">
+                    </a>
+
+                    <a href="chubba.html">
+                        <div class="item c">
+                            <div class="itemImg itemImgC">
+                                <div class="projectName">Chubba</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class=projinfo>
-                            <p>Type Design</p>ALF Mono
+                    </a>
+
+                    <a href="sans%20%E2%84%965.html">
+                        <div class="item d">
+                            <div class="itemImg itemImgD">
+                                <div class="projectName">Sans &#8470;5</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="https://www.mcdonalds.com/" target="_blank">
-                    <div class="item c">
-                        <div class="overlay">
-                            <video autoplay muted loop>
-                            <source src="Resources/css/img/loop.mp4" type="video/mp4">
-                            </video>
-                        </div>    
-                        <div class=projinfo>
-                            <p>Type Design</p>Chubba
+                    </a>
+
+                    <a href="amorous.html">
+                        <div class="item e">
+                            <div class="itemImg itemImgE">
+                                <div class="projectName">Amorous</div>
+                                <div class=roles>
+                                    <div class="">Packaging</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="https://www.yahoo.com/" target="_blank">
-                    <div class="item d">
-                        <div class="overlay">
+                    </a>
+
+                    <a href="archive.html">
+                        <div class="item f">
+                            <div class="itemImg itemImgF">
+                                <div class="projectName">Archive</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                    <div>Logo</div>
+                                    <div>Illustration</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class=projinfo>
-                            <p>Logo, Identity</p>Lashbar
-                        </div>
-                    </div>
-                </a>
-                <a href=link.html target="_blank">
-                    <div class="item e">
-                        <div class="overlay">
-                        </div>
-                        <div class=projinfo>
-                            <p>Logo, Identity</p>Complio
-                        </div>
-                    </div>
-                </a>
-                <a href="https://archive.org/" target="_blank">
-                    <div class="item f">
-                        <div class="overlay">
-                        </div>
-                        <div class=projinfo>
-                            <p>Various</p>Archive
-                        </div>
-                    </div>
-                </a>
+                    </a>
+
+                </div>
+
             </div>
-        </div>
-        </div>    
+            
+        </div>   
+        
         <script>
         
 var leftgear = document.getElementById("leftgear");
@@ -102,8 +123,12 @@ window.addEventListener("scroll", function() {
 });
         
         </script>
+
         <div class="long"></div>
-        <div class="hint">Scroll to navigate</div>
+        <div class="hintCont">
+            <div class="hint">Scroll to navigate</div>
+            <div class="hintBox">?</div>
+        </div>
     </body>
     
 </html>

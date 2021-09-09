@@ -1,101 +1,66 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 510px) {
+    
+    /*CAROUSEL*/
+    
+    .container {  
+        width: 70vw;
+        height: 70vw;
+        perspective: 2000px;
+    }
 
-    .nav {
-        padding: 4vw 4vw;
+    .item {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .itemImgC {
+        background: url(chubimg/chub_thumb_square.svg);
     }
     
-    .nav li{
-        margin-right: 4vw;
-        padding:  2px 0px;
+    .itemImgD {
+        background: url(rtimg/sans_thumb_square.svg);
     }
     
-    html::-webkit-scrollbar {
-      width: 0px;
+    .itemImgF {
+        background: url(archimg/arch_thumb_square);
     }
     
-    
-    
-    
-.container {  
-    margin: 0 auto;
-    display: flex;
-    width: 60vw;
-    height: 72vw;
-    transform-style: preserve-3d;
-    position: relative;
-	-webkit-animation-name: rotateSlow;  
-	-webkit-animation-iteration-count: infinite;  
-    -webkit-animation-duration: 20s; 
-    perspective: 2000px;
-}
-    
-
-.item {
-    width: 60vw;
-    height: 72vw;
-}
-
-.item p{
-    margin-bottom: 5px;
-    font-size: 8px;
-}
-
-.projinfo {
-    width: 300px;
-}
-
-
-.carousel a {
-	text-decoration: none;
-	color: #000;
-}
-
-.overlay {
-    width: 60vw;
-    height: 60vw;
-}
-
-.c video {
-    width: 60vw;
-    height: 60vw;
-    object-fit: cover;
-    z-index: 0;
-}
-
-    
-    
-    
-    
+    .itemImg {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 40vw;
+        height: 22.5vw;
+        padding: 10px;
+    }
+ 
+    .itemImg {
+        width: 70vw;
+        height: 70vw;
+    }
     
     .a {
-        transform: rotateX(0deg) translateZ(70vw);
+        transform: rotateX(0deg) translateZ(65vw);
     }
 
     .b {
-        transform: rotateX(-60deg) translateZ(70vw);
+        transform: rotateX(-60deg) translateZ(65vw);
     }
 
     .c {
-        transform: rotateX(-120deg) translateZ(70vw);
+        transform: rotateX(-120deg) translateZ(65vw);
     }
 
     .d {
-        transform: rotateX(-180deg) translateZ(70vw);
+        transform: rotateX(-180deg) translateZ(65vw);
     }
 
     .e {
-        transform: rotateX(-240deg) translateZ(70vw);
-    }
-    
-    .f {
-        transform: rotateX(-300deg) translateZ(70vw);
-    }
-    
-    .desc {
-        line-height: 150%;
+        transform: rotateX(-240deg) translateZ(65vw);
     }
 
-    .footer p {
-        width: 100vw;
+    .f {
+        transform: rotateX(-300deg) translateZ(65vw);
     }
 }

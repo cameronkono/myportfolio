@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
-        <title>Cameron Kono</title>
+        <title>Cameron Kono - Zelus</title>
         
 <!--STYLESHEETS/FONTS-->
         
@@ -14,52 +14,100 @@
         <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="Resources/js/script.js"></script>
 
 <!--FAVICONS-->
         
     </head>
     
     <body>
-        <div class=nav>
+        <div class="nav" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono <span class="greyTxt">→ Zelus</span></div></a>
             <ul>
                 <li class="activeLink"><a href="index.html">Work</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
-            <a href="index.html"><div class=logo>Cameron Kono</div></a>
+        </div>
+        
+        <script>
+            var lastScrollTop = 0;
+            $(window).scroll(function(){
+              var st = $(this).scrollTop();
+              var nav = $('.nav');
+              setTimeout(function(){
+                if (st > lastScrollTop){
+                  $('#nav').addClass('hidden');
+                } else {
+                  $('#nav').removeClass('hidden');
+                }
+                lastScrollTop = st;
+              }, 100);
+            });
+        </script>
+        
+        <div class="wideImg firstImg"><img src="Resources/css/zlimg/zls_cover.svg"></div>
+        
+        <div class="stickyRow">
+            <p class="third">Zelus</p>
+            <p class="third">Building a new social fitness experience.</p>
+        </div>
+        
+        <div class=row>
+            <p class="first">Logo<br>Identity</p>
+            <p class=third>Zelus is a brand new social fitness app that connects friends and athletes from across the globe. With Zelus, users can participate in real-time running and cycling races against global competitors, in private races with friends, or in charity races for a cause of their choosing.<br><br>The team at Zelus reached out to me to create a brand new visual idenity for their upcoming iOS and Android App.</p>
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_logo_construction.svg"></div>
+        <div class=row>
+            <p class=first>Logomark Construction</p>
+            <p class=second></p>
+             <p class=third>Zelus gets its name from Zelos, a daemon from Greek mythology that personifies dedication, competition and zeal. A winged foot in motion became the main concept for the logomark, inspired by the wings on the back of the daemon Zelos.</p>
+        </div>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_logotype_construction.svg"></div>
+        
+        <div class="video-containerFirst">
+            <video autoplay muted loop>
+                <source src="Resources/css/zlimg/zls_color_text_motion.mp4">
+            </video>
+        </div>
+        
+        <div class="video-containerSecond">
+            <video autoplay muted loop>
+                <source src="Resources/css/zlimg/zls_foot_motion.mp4">
+            </video>
         </div>
 
-        <div class=heroImg><img src="Resources/css/img/zlscover.jpg"></div>
+        <div class="dblImg">
+            <img class="imgMargin" src="Resources/css/zlimg/zls_app.jpg">
+            <img class="imgMargin" src="Resources/css/zlimg/zls_widget.jpg">
+        </div>
+    
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_type.svg"></div>
         <div class=row>
-            <div class=halfRow>
-                <p class=title>Zelus</p>
-              <p class=year><br>Logo &amp; Identity<br>Type Design</p>
-            </div>
-            
-            <p class=desc>Zelus is a brand new social fitness app, connecting friends and athletes from across the globe. With Zelus, users can participate in real-time running and cycling races against global competitors, or in private races with friends.<br><br>The team at Zelus reached out to me to create a brand new visual idenity for their upcoming iOS &amp; Android App.</p>
+            <p class=third>Typography</p>
+            <p class=third>Zelus’ typography is inspired by the condesned bold type that is frequently found on race bibs and cards. Rama Gothic, inspired by historic wood type, perfectly embodies this style, with its tall, loud letterforms. Roc Grotesk, which is also inspired by historic wood type, is used as a secondary, supporting typeface.</p>
         </div>
-        <div class=fullImg><img src="Resources/css/img/Zls_logo_construction.png"></div>
-        <div class=row>
-            <div class=halfRow>
-                <p class=year>Logo Construction</p>
-            </div>
-             <p class=desc>The App gets its name from Zelos, a daimon from Greek mythology that personifies dedication, competition and zeal. A winged foot became the main concept for the brand-mark, inspired by the wings of the daimon.</p>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_type_origin_long.jpg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_ad_bg.jpg"></div>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_app_screens.png"></div>
+        
+        <div class="dblImg">
+            <img class=imgMargin src="Resources/css/zlimg/zls_lightbox.jpg">
+            <img class="imgMargin" src="Resources/css/zlimg/zls_watch.jpg">
         </div>
-        <div class="fullImg halfImg"><img src="Resources/css/img/zlstype.png"></div>
-        <div class=row>
-            <div class=halfRow>Zelus Titling</div>
-            <p class=desc>Zelus uses a modified version of Archivo (orginally designed by Hector Gatti of Omnibus Type) which has been distilled into two text cuts (Regular &amp; Bold) and one titling cut. <br><br>Changes include a sharply jointed /Z, an alternate /Y, a spur-less /a, round dots &amp; tittles, slightly exaggerated terminals, higher tapering in the titling cut, as well as other changes.</p>
+        
+        <div class="wideImg"><img src="Resources/css/zlimg/zls_ad_street.jpg"></div>
+        
+        <div class="row">
+            <a href=index.html><div class="back">← Back</div></a>
+            <p class=third></p>
         </div>
-        <div class="fullImg halfImg"><img src="Resources/css/img/zlstype2.png"></div>
-        <div class=row>
-            <p class=year>Zelus Text</p>
-            <p class=desc></p>
-        </div>
-        <div class=fullImg><img src="Resources/css/img/zlsclrgrad.jpg"></div>
-                <div class=row>
-            <p class=year>Color Pallette</p>
-            <p class=desc></p>
-        </div>
-        <div class=fullImg><img src="Resources/css/img/zls_grad_ipad_web.jpg"></div>
+        
         <div class=footer>
             <p>©2021 Cameron Kono</p>
         </div>
