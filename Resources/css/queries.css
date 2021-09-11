@@ -21,6 +21,10 @@
         background: url(rtimg/sans_thumb_square.svg);
     }
     
+    .itemImgE {
+        background: url(amimg/thumbsqaure.jpg);
+    }
+    
     .itemImgF {
         background: url(archimg/arch_thumb_square_static.svg);
     }

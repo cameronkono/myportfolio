@@ -67,7 +67,7 @@ body {
     color: #fff;
     display: inline-block;
     background-color: #000;
-    padding: 1.5vw 2.25vw;
+    padding: 15px 20px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,9 @@ a {
     src: url(fonts/boboVF.ttf);
 }
 
+/*-------------------------------------------*/
 /*NAVIGATION/REUSABLES*/
+/*-------------------------------------------*/
 
 .nav {
 	width:100vw;
@@ -139,7 +141,9 @@ a {
     color:grey;
 }
 
+/*-------------------------------------------*/
 /*CAROUSEL*/
+/*-------------------------------------------*/
 
 .navCaro {
     background-color: transparent;
@@ -208,7 +212,7 @@ a {
 }
 
 .itemImgE {
-    background: url(amimg/amorous_texture.jpg);
+    background: url(amimg/gradthumb.jpg);
 }
 
 .itemImgF {
@@ -279,7 +283,6 @@ a {
     transform: rotateX(-300deg) translateZ(22vw);
 }
 
-
 .a:hover,
 .b:hover,
 .c:hover,
@@ -325,8 +328,9 @@ a {
     position: fixed;
 }
 
-
+/*-------------------------------------------*/
 /*ROWS & COLUMNS*/
+/*-------------------------------------------*/
 
 .row {
     display: flex;
@@ -379,7 +383,9 @@ a {
     line-height: 120%;
 }
 
+/*-------------------------------------------*/
 /*IMAGES & VIDEO*/
+/*-------------------------------------------*/
 
 .firstImg {
     margin-top: 9vw;
@@ -398,9 +404,10 @@ a {
 .dblImg {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 94vw;
     height: 45.5vw;
     margin-bottom: 3vw;
+    margin-left: 3vw;
 }
 
 .imgMargin {
@@ -523,7 +530,9 @@ a {
     100%  {font-variation-settings: 'wght' 50;}
 }
 
+/*-------------------------------------------*/
 /*FOOTER*/
+/*-------------------------------------------*/
 
 .footer {
     width: 100vw;
