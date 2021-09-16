@@ -12,6 +12,15 @@
         width: 70vw;
         height: 70vw;
     }
+    
+    .itemImgA video{
+        width: 70vw;
+        height: 70vw;
+        position: absolute;
+        z-index: -10;
+        margin-left: -10px;
+        margin-top: -10px
+    }
 
     .itemImgC {
         background: url(chubimg/chub_thumb_square.svg);
@@ -26,7 +35,7 @@
     }
     
     .itemImgF {
-        background: url(archimg/arch_thumb_square_static.svg);
+        background: url(archimg/archive_thumb_square.svg);
     }
     
     .itemImg {
