@@ -7,8 +7,8 @@
 }
 
 body {
-	background-color: #fff;
-	color:#000;
+	background-color: #000;
+	color:#fff;
     font-family: retta;
 	font-feature-settings: "ss02", "ss20", "ss11";
     letter-spacing: 0.0vw;
@@ -45,8 +45,15 @@ body {
 }
 
 ::selection {
-    background: #000;
-    color:#fff;/* WebKit/Blink Browsers */
+    background: #fff;
+    color:#000;/* WebKit/Blink Browsers */
+}
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+display: none;
+color: fff;
+height: 0;
 }
 
 .bobo {
@@ -64,9 +71,9 @@ body {
 }
 
 .back {
-    color: #fff;
+    color: #000;
     display: inline-block;
-    background-color: #000;
+    background-color: #fff;
     padding: 15px 20px;
     display: inline-flex;
     justify-content: center;
@@ -105,7 +112,7 @@ a {
 	align-items: center;
     top:0;
     z-index: 20;
-    background-color: #fff;
+    background-color: #000;
     transition: transform 0.5s;
 }
 
@@ -125,7 +132,7 @@ a {
 
 .nav a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .nav a:hover {
@@ -219,7 +226,7 @@ a {
 }
 
 .itemImgE {
-    background: url(amimg/gradthumb.jpg);
+    background: url(amimg/arches_thumb.jpg);
 }
 
 .itemImgF {
@@ -300,7 +307,7 @@ a {
 }
 
 .hintCont {
-    background-color: #ebebeb;
+    background-color: #222;
     width: 60px;
     height: 60px;
     border-radius: 44px;
@@ -317,8 +324,8 @@ a {
 }
 
 .hintCont:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 .hintCont:hover .hint {
@@ -328,7 +335,7 @@ a {
 .hint {
     display: none;
     background-color: none;
-    color: #000;
+    color: #fff;
     margin-left: 240px;
     width: 100vw;
     text-align: center;
@@ -365,7 +372,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 1.5vw 3vw;
-    background-color: #fff;
+    background-color: #000;
     top: 0;
 }
 
@@ -473,7 +480,7 @@ a {
     margin-left: 3vw;
     width: 94vw;
     height: 47vw;
-    background-color: #fff;
+    background-color: #000;
     margin-top:12vw;
     display: flex;
     justify-content: center;
@@ -481,7 +488,7 @@ a {
 }
 
 .chubbLetterstxt {
-    color: #000;
+    color: #fff;
     letter-spacing: -0.1vw;
     font-family: bobo;
 }
@@ -543,6 +550,7 @@ a {
 
 .footer {
     width: 100vw;
+    color: dimgray;
     padding: 3vw;
     margin-top: 12vw;
 }
