@@ -9,7 +9,7 @@
 body {
 	background-color: #000;
 	color:#fff;
-    font-family: retta;
+    font-family: "Sans &#8470;5";
 	font-feature-settings: "ss02", "ss20", "ss11";
     letter-spacing: 0.0vw;
     font-variation-settings: 'wght' 450;
@@ -91,12 +91,12 @@ a {
 }
 
 @font-face {
-    font-family: "retta";
+    font-family: "Sans &#8470;5";
     src: url(fonts/ritVF.ttf);
 }
 
 @font-face {
-    font-family: "bobo";
+    font-family: "Chubbatest";
     src: url(fonts/boboVF.ttf);
 }
 
@@ -493,11 +493,11 @@ a {
 .chubbLetterstxt {
     color: #fff;
     letter-spacing: -0.1vw;
-    font-family: bobo;
+    font-family: "Chubbatest";
 }
 
 .WIP {
-    font-family: bobo;
+    font-family: "Chubbatest";
     font-size: 20vw;
     line-height: 80%;
     letter-spacing: -0.1vw;
