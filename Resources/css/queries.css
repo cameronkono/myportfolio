@@ -76,4 +76,14 @@
     .f {
         transform: rotateX(-300deg) translateZ(65vw);
     }
+    
+    .hint {
+        display: none;
+        background-color: none;
+        color: #fff;
+        margin-left: 200px;
+        width: 100vw;
+        text-align: center;
+        position: fixed;
+    }
 }
