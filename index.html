@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
         <title>Cameron Kono</title>
         
@@ -15,83 +15,122 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        <script src="Resources/js/script.js"></script>
+        <script src="Resources/js/infinitescroll.js"></script>
+        
 
 <!--FAVICONS-->
-        
+     
     </head>
     
     <body>
-        <div class="nav">
-            <a href="">Cameron Kono</a>,&nbsp;
-            <a href="">Info</a>
+        <div class="nav navCaro" id="nav">
+            <a href="index.html"><div class=logo>Cameron Kono</div></a>
+            <ul>
+                <li class="activeLink"><a href="index.html">Work</a></li>
+                <li>
+                    <a href="mailto:cameronkono@gmail.com">Contact
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="masterContainer">
-        <div class="container">
-          <div class="carousel" id="carousel">
-            <a href="" class="item a">
-                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline src="Resources/css/zelusImg/zls_foot_motion.mp4"></video> 
-                <div class="projectName">Zelus</div>
-                <div class=roles>
-                    <div class=lg>Logo</div>
-                    <div class=id>Identity</div>
-                    <div class=ux>UI&amp;UX</div>
+        
+        <div class=mastercont>
+            
+            <div class="container">
+
+                <div class="carousel" id="leftgear">
+
+                    <a href="zelus.html">
+                        <div class="item a">
+                            <div class="itemImg itemImgA">
+                                <video autoplay muted loop>
+                                    <source src="Resources/css/zlimg/zls_foot_motion.mp4">
+                                </video>
+                                <div class="projectName">Zelus</div>
+                                <div class=roles>
+                                    <div class="">Logo</div>
+                                    <div>Identity</div>
+                                    <div>UI&amp;UX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="lashbar.html">
+                        <div class="item b">
+                            <div class="itemImg itemImgB">
+                                <div class="projectName">Lashbar</div>
+                                <div class=roles>
+                                    <div class="">Logomark</div>
+                                    <div>Identity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="chubba.html">
+                        <div class="item c">
+                            <div class="itemImg itemImgC">
+                                <div class="projectName">Chubba</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="sans%20%E2%84%965.html">
+                        <div class="item d">
+                            <div class="itemImg itemImgD">
+                                <div class="projectName">Sans &#8470;5</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="gradients.html">
+                        <div class="item e">
+                            <div class="itemImg itemImgE">
+                                <div class="projectName">Gradient Exercises</div>
+                                <div class=roles>
+                                    <div class="">Illustration</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="archive.html">
+                        <div class="item f">
+                            <div class="itemImg itemImgF">
+                                <div class="projectName">Archive</div>
+                                <div class=roles>
+                                    <div class="">Type Design</div>
+                                    <div>Logo Work</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-            </a>
-            <a href="" class="item b">
-                <div class="projectImg bImg"></div>
-                <div class="projectName">Sans No.5</div>
-                <div class=roles>
-                    <div class=td>Type Design</div>
-                </div>
-            </a>
-            <a href="" class="item c">
-                <div class="projectName">Lashbar</div>
-                <div class=roles>
-                    <div class=lg>Logomark</div>
-                    <div class=id>Identity</div>
-                </div>
-            </a>
-            <a href="" class="item d">
-                <div class="projectName">Chubba</div>
-                <div class=roles>
-                    <div class=td>Type Design</div>
-                </div>  
-            </a>
-            <a href="" class="item e">
-                <div class="projectName">Gradient Exercises</div>
-                <div class=roles>
-                    <div class=il>Illustration</div>
-                </div>   
-            </a>
-            <a href="" class="item f">
-                <div class=title>
-                    <div class="projectName">Archive</div>
-                    <div class=roles>
-                        <div class=lg>Logos</div>
-                        <div class=td>Type Design</div>
-                        <div class=threed>3D</div>
-                    </div>
-                </div> 
-            </a>
-          </div>
-        </div>
-        </div>
+
+            </div>
+            
+        </div>   
         
         <script>
-            window.onload = function () {
-                location.href = '#middleAnchor';
-            }
-            
-            var carousel = document.getElementById("carousel");
+            var leftgear = document.getElementById("leftgear");
+
             window.addEventListener("scroll", function() {
-                carousel.style.transform = "rotateX("+window.pageYOffset/9.26+"deg)";
+                leftgear.style.transform = "rotateX("+window.pageYOffset/9.26+"deg)";
             });
         </script>
-        
-        <div class=hint>Scroll to navigate</div>
-        <div class="long">
-            <div class="middle" id="middleAnchor"></div>
+
+        <div class="long"></div>
+        <div class="hintCont">
+            <div class="hint">Scroll to navigate</div>
+            <div class="hintBox">?</div>
         </div>
     </body>
     

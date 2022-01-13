@@ -1,0 +1,89 @@
+@media all and (max-width: 510px) {
+    
+    /*CAROUSEL*/
+    
+    .container {  
+        width: 70vw;
+        height: 70vw;
+        perspective: 2000px;
+    }
+
+    .item {
+        width: 70vw;
+        height: 70vw;
+    }
+    
+    .itemImgA video{
+        width: 70vw;
+        height: 70vw;
+        position: absolute;
+        z-index: -10;
+        margin-left: -10px;
+        margin-top: -10px
+    }
+
+    .itemImgC {
+        background: url(chubimg/choobthumbsquare.jpg);
+    }
+    
+    .itemImgD {
+        background: url(rtimg/sans_thumbsquare.svg);
+    }
+    
+    .itemImgE {
+        background: url(amimg/gradathumbsquare.jpg);
+    }
+    
+    .itemImgF {
+        background: url(archimg/archive_thumb_square.svg);
+    }
+    
+    .itemImg {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 40vw;
+        height: 22.5vw;
+        padding: 10px;
+    }
+ 
+    .itemImg {
+        width: 70vw;
+        height: 70vw;
+    }
+    
+    .a {
+        transform: rotateX(0deg) translateZ(65vw);
+    }
+
+    .b {
+        transform: rotateX(-60deg) translateZ(65vw);
+    }
+
+    .c {
+        transform: rotateX(-120deg) translateZ(65vw);
+    }
+
+    .d {
+        transform: rotateX(-180deg) translateZ(65vw);
+    }
+
+    .e {
+        transform: rotateX(-240deg) translateZ(65vw);
+    }
+
+    .f {
+        transform: rotateX(-300deg) translateZ(65vw);
+    }
+    
+    .hint {
+        display: none;
+        background-color: none;
+        color: #fff;
+        margin-left: 200px;
+        width: 100vw;
+        text-align: center;
+        position: fixed;
+    }
+}
