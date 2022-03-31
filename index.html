@@ -1,137 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
-        <title>Cameron Kono</title>
-        
-<!--STYLESHEETS/FONTS-->
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <script src="Resources/js/infinitescroll.js"></script>
-        
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="nav" id="nav">
+    <a href="index.html">Cameron Kono</a>
+    <a href="#">Work</a>
+    <a href="#">Info</a>
+    <a href="mailto:cameronkono@gmail.com">Contact</a>
+  </div>
 
-<!--FAVICONS-->
-     
-    </head>
-    
-    <body>
-        <div class="nav navCaro" id="nav">
-            <a href="index.html"><div class=logo>Cameron Kono</div></a>
-            <ul>
-                <li class="activeLink"><a href="index.html">Work</a></li>
-                <li>
-                    <a href="mailto:cameronkono@gmail.com">Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class=mastercont>
-            
-            <div class="container">
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
 
-                <div class="carousel" id="leftgear">
+  <a href="zelus.html">Zelus</a>
+  <a href="lashbar.html">Lashbar</a>
 
-                    <a href="zelus.html">
-                        <div class="item a">
-                            <div class="itemImg itemImgA">
-                                <video autoplay muted loop>
-                                    <source src="Resources/css/zlimg/zls_foot_motion.mp4">
-                                </video>
-                                <div class="projectName">Zelus</div>
-                                <div class=roles>
-                                    <div class="">Logo</div>
-                                    <div>Identity</div>
-                                    <div>UI&amp;UX</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
 
-                    <a href="lashbar.html">
-                        <div class="item b">
-                            <div class="itemImg itemImgB">
-                                <div class="projectName">Lashbar</div>
-                                <div class=roles>
-                                    <div class="">Logomark</div>
-                                    <div>Identity</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="chubba.html">
-                        <div class="item c">
-                            <div class="itemImg itemImgC">
-                                <div class="projectName">Chubba</div>
-                                <div class=roles>
-                                    <div class="">Type Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="sans%20%E2%84%965.html">
-                        <div class="item d">
-                            <div class="itemImg itemImgD">
-                                <div class="projectName">Sans &#8470;5</div>
-                                <div class=roles>
-                                    <div class="">Type Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="gradients.html">
-                        <div class="item e">
-                            <div class="itemImg itemImgE">
-                                <div class="projectName">Gradient Exercises</div>
-                                <div class=roles>
-                                    <div class="">Illustration</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="archive.html">
-                        <div class="item f">
-                            <div class="itemImg itemImgF">
-                                <div class="projectName">Archive</div>
-                                <div class=roles>
-                                    <div class="">Type Design</div>
-                                    <div>Logo Work</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-            
-        </div>   
-        
-        <script>
-            var leftgear = document.getElementById("leftgear");
-
-            window.addEventListener("scroll", function() {
-                leftgear.style.transform = "rotateX("+window.pageYOffset/9.26+"deg)";
-            });
-        </script>
-
-        <div class="long"></div>
-        <div class="hintCont">
-            <div class="hint">Scroll to navigate</div>
-            <div class="hintBox">?</div>
-        </div>
-    </body>
-    
+</body>
 </html>

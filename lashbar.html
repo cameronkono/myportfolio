@@ -1,114 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
-        <title>Cameron Kono - Lashbar</title>
-        
-<!--STYLESHEETS/FONTS-->
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <script src="Resources/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="nav" id="nav">
+    <a href="index.html">Cameron Kono</a>
+    <a href="#">Work</a>
+    <a href="#">Info</a>
+    <a href="mailto:cameronkono@gmail.com">Contact</a>
+  </div>
 
-<!--FAVICONS-->
-        
-    </head>
-    
-    <body>
-        <div class="nav" id="nav">
-            <a href="index.html"><div class=logo>Cameron Kono</div></a>
-            <ul>
-                <li class="activeLink"><a href="index.html">Work</a></li>
-                <li>
-                    <a href="mailto:cameronkono@gmail.com">Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <script>
-            var lastScrollTop = 0;
-            $(window).scroll(function(){
-              var st = $(this).scrollTop();
-              var nav = $('.nav');
-              setTimeout(function(){
-                if (st > lastScrollTop){
-                  $('#nav').addClass('hidden');
-                } else {
-                  $('#nav').removeClass('hidden');
-                }
-                lastScrollTop = st;
-              }, 100);
-            });
-        </script>
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
 
-        <div class="wideImg firstImg"><img src="Resources/css/lbimg/lb_cover.jpg"></div>
+  <div class="firstImg">
+    <img src="Resources/htmlimg/lb/lb_shopSign.jpg">
+  </div>
 
-                
-        <div class="stickyRow lb">
-            <p class="first">Lashbar</p>
-            <p class=second></p>
-            <p class=third>Reimagining tailored beauty.</p>
-        </div>
-        
-        <div class=row>
-            <p class=first>Logomark<br>Identity</p>
-            <p class=second></p>
-            <p class=third>Lashbar is a chain of salons around Southern California, specializing in lash extensions and other lash services. With an empahsis on client-first service, Lashbar technicians ensure that every service is bespoke to the client's unique preferences. While working with Lashbar stakeholders, I devised revisions to the brand, such as revamping the logomark, typography and more.</p>
-        </div>
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_lockup.jpg"></div>
-        <div class=row>
-            <p class=first></p>
-            <p class=second></p>
-            <p class=third></p>
-        </div>
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_old_logo.svg"></div>
-        <div class="row rowMargin">
-            <p class="third">Redrawn Logomark</p>
-            <p class=third>At lashbar, technicians are also called 'Lash Faries' — because they make the magic happen. The old logomark symbolized this concept, but it was complicated and lost legibility and clarity at large sizes. Though the logotype remains unchanged (the stakeholders' descision), the new logomark has been simplified and refined to work in any context, while still paying homage to the Lash Fairies that make everything possible.</p>
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_logo_sizes.svg"></div>
+  <div class="row">
+    <div class="sixth mobileHalf">
+      Lashbar
+    </div>
+    <div class="sixth mobileHalf">
+      Roles:
+      <br><br>
+      Identity<br>
+      Logomark
+    </div>
+    <div class="half mobileFull">
+        Lashbar is a group of salons around Southern California specializing in lash extensions and other lash services. With an empahsis on client satisfaction, Lashbar technicians ensure that every service is bespoke and unique to their client's needs and preferences. While working with Lashbar stakeholders, I devised revisions to the brand, such as revamping the logomark, typography and more.
+    </div>
+  </div>
 
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_lockup_spacing.svg"></div>
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_lockup.png">
+  </div>
 
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_cover.jpg"></div>
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_lockup_spacing.png">
+  </div>
 
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_type.svg"></div>
-        <div class="row rowMargin">
-            <p class="third">Typograhpic Specs</p>
-            <p class=third>Just like it's service, Lashbar's typograhpy aims to be warm, professional and elegant. Freight Big is used for larger, eye-catching headings, while Sofia Pro is used for small headings and body copy.</p>
-        </div>
-        
-        <div class="dblImg">
-            <img class="imgMargin" src="Resources/css/lbimg/lb_colors_vertical.svg">
-            <img class="imgMargin" src="Resources/css/lbimg/lb_insta.png">
-        </div>
-        <div class=row>
-            <p class=first></p>
-            <p class=second></p>
-            <p class=third></p>
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_lash_types.svg"></div>
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_oldLogo.png">
+  </div>
+  
+  <div class="row imgRow">
+    <div class="half marginRight">
+        Logo<br>
+        <br>
+      At lashbar, technicians are also called 'Lash Faries' because they make the magic happen. The old logomark symbolized this concept, but it was complicated and lost legibility and clarity at small sizes. Though the wordmark remains unchanged (the stakeholders' descision), the new logomark has been simplified and refined to work in any context, while still paying homage to the Lash Fairies that make it all possible.
+    </div>
+    <div class="halfImg marginLeft">
+      <img src="Resources/htmlimg/lb/lb_logoSizes.png">
+    </div>
+  </div>
 
-        <div class="wideImg"><img src="Resources/css/lbimg/lb_biz_cards.jpg"></div>
-        
-        <div class="row">
-            <a href=index.html><div class="back">← Back</div></a>
-            <p class=third></p>
-        </div>
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_signLockup.jpg">
+  </div>
 
-        <div class=footer>
-            <p>©2021 Cameron Kono</p>
+  <div class="row">
+    <div class="halfImg marginRight">
+        <img src="Resources/htmlimg/lb/lb_colors.png">
+    </div>
+    <div class="halfImg marginLeft">
+      <img src="Resources/htmlimg/lb/lb_colorCombos.png">
+    </div>
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_typography.png">
+  </div>
+
+  <div class="row imgRow">
+    <!--
+      <div class="halfImg marg" style="padding-right: var(--universalMargin)">
+        <img src="Resources/htmlimg/zls/zls_raceBibs.png">
+      </div>
+    -->
+    <div class="half marginRight">
+        Typography<br>
+        <br>
+        Just like it's service, Lashbar's typograhpy aims to be warm, yet professional. Freight Big (2005), an elegantly drawn serif by Joshua Darden, is used for larger eye-catching headings, while Sofia Pro (Olivier Gourvat, 2012) is  used for small headings and body copy.
         </div>
-    </body>
-    
+    </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_lashTypes.png">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_instagram.png">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_billboard.jpg">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/lb/lb_bizCards.jpg">
+  </div>
+
+</body>
 </html>

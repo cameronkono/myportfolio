@@ -1,119 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Cameron is a multi-disciplinary designer, residing in Southern California.">
-        <title>Cameron Kono - Zelus</title>
-        
-<!--STYLESHEETS/FONTS-->
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-        
-        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <script src="Resources/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="nav" id="nav">
+    <a href="index.html">Cameron Kono</a>
+    <a href="#">Work</a>
+    <a href="#">Info</a>
+    <a href="mailto:cameronkono@gmail.com">Contact</a>
+  </div>
 
-<!--FAVICONS-->
-        
-    </head>
-    
-    <body>
-        <div class="nav" id="nav">
-            <a href="index.html"><div class=logo>Cameron Kono</div></a>
-            <ul>
-                <li class="activeLink"><a href="index.html">Work</a></li>
-                <li>                    
-                    <a href="mailto:cameronkono@gmail.com">Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <script>
-            var lastScrollTop = 0;
-            $(window).scroll(function(){
-              var st = $(this).scrollTop();
-              var nav = $('.nav');
-              setTimeout(function(){
-                if (st > lastScrollTop){
-                  $('#nav').addClass('hidden');
-                } else {
-                  $('#nav').removeClass('hidden');
-                }
-                lastScrollTop = st;
-              }, 100);
-            });
-        </script>
-        
-        <div class="wideImg firstImg"><img src="Resources/css/zlimg/zls_cover.svg"></div>
-        
-        <div class="stickyRow">
-            <p class="third">Zelus</p>
-            <p class="third">Building a new social fitness experience.</p>
-        </div>
-        
-        <div class=row>
-            <p class="first">Logo<br>Identity<br>UI/UX</p>
-            <p class=third>Zelus is a brand new social fitness app that connects friends and athletes from across the globe. With Zelus, users can participate in real-time running and cycling races against global competitors, in private races with friends or in charity races for a cause of their choosing.<br><br>The team at Zelus reached out to me to create a brand new logo and visual identity for their soon-to-be released iOS and Android App.</p>
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_logo_construction.svg"></div>
-        <div class=row>
-            <p class=first>Logomark Construction</p>
-            <p class=second></p>
-             <p class=third>Zelus gets its name from Zelos, a daemon from Greek mythology that personifies dedication, competition and zeal. A winged foot in motion became the main concept for the logomark, inspired by the wings on the back of the daemon Zelos.</p>
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_logotype_construction.svg"></div>
-        
-        <div class="video-containerFirst">
-            <video autoplay muted loop>
-                <source src="Resources/css/zlimg/zls_color_text_motion.mp4">
-            </video>
-        </div>
-        
-        <div class="video-containerSecond">
-            <video autoplay muted loop>
-                <source src="Resources/css/zlimg/zls_foot_motion.mp4">
-            </video>
-        </div>
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
 
-        <div class="dblImg">
-            <img class="imgMargin" src="Resources/css/zlimg/zls_app.jpg">
-            <img class="imgMargin" src="Resources/css/zlimg/zls_widget.jpg">
-        </div>
-    
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_type.svg"></div>
-        <div class=row>
-            <p class=third>Typography</p>
-            <p class=third>Zelus’ typography is inspired by the condesned bold type that is frequently found on race bibs and cards. Rama Gothic, inspired by historic wood type, perfectly embodies this style with its tall and loud letterforms. Roc Grotesk, which is also inspired by historic wood type, is used as a secondary supporting typeface.</p>
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_type_origin_long.jpg"></div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_ad_bg.jpg"></div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_app_screens.png"></div>
-        
-        <div class="dblImg">
-            <img class=imgMargin src="Resources/css/zlimg/zls_lightbox.jpg">
-            <img class="imgMargin" src="Resources/css/zlimg/zls_watch.jpg">
-        </div>
-        
-        <div class="wideImg"><img src="Resources/css/zlimg/zls_ad_street.jpg"></div>
-        
-        <div class="row">
-            <a href=index.html><div class="back">← Back</div></a>
-            <p class=third></p>
-        </div>
-        
-        <div class=footer>
-            <p>©2021 Cameron Kono</p>
-        </div>
-    </body>
-    
+  <div class="firstImg">
+    <img src="Resources/htmlimg/zls/zls_cover.jpg">
+  </div>
+
+  <div class="row">
+    <div class="sixth mobileHalf">
+      Zelus
+    </div>
+    <div class="sixth mobileHalf">
+      Roles:
+      <br><br>
+      Identity<br>
+      Logo<br>
+      UX UI
+    </div>
+    <div class="half mobileFull">
+      Zelus is a brand new social fitness app that connects friends and athletes from across the world. With Zelus, users can participate in real-time running and cycling races against global competitors, in private races with friends, or in charity races for a cause of their choosing. The team at Zelus reached out to me to create a brand new logo and visual identity for their iOS and Android App.
+    </div>
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zls_lockup.png">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zls_appIcon.jpg">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zls_screenshots.jpg">
+  </div>
+
+
+  <div class="row imgRow">
+    <div class="half marginRight">
+      Logo<br>
+      <br>
+      Zelus gets its name from Zelos, a daemon from Greek mythology that personifies dedication, competition and zeal. A winged foot in motion became the main concept for the logomark, inspired by the wings on the back of the daemon Zelos.
+    </div>
+    <div class="halfImg">
+      <video src="Resources/htmlimg/zls/3x2 flat new.mp4" autoplay muted loop></video>
+    </div>
+  </div>
+
+
+  <div class="fullImg">
+    <video src="Resources/htmlimg/zls/zls_colorPaletteDark.mp4" autoplay muted loop></video>
+  </div>
+
+<!--  
+  <div class="fullImg">
+     <img src="Resources/htmlimg/zls/zls_colors.png">
+   </div>
+--> 
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zelus_type_inspo.gif">
+  </div>
+
+  <div class="row imgRow">
+  <!--
+    <div class="halfImg marg" style="padding-right: var(--universalMargin)">
+      <img src="Resources/htmlimg/zls/zls_raceBibs.png">
+    </div>
+  -->
+  <div class="half marginRight">
+      Typography<br>
+      <br>
+      Zelus' typography references the condesned bold type that is frequently found on classic race bibs and cards, used to identify competitors in races.
+      <br><br>
+      Dharma Gothic (Ryochi Tsunekawa, 2011) is inspired by historic wood type and perfectly embodies this style with its tall and loud letterforms. Aktiv Grotesk (Dalton Maag, 2010) is a flexible, neutral neo-grotesque and our supporting typeface.
+      </div>
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zls_flagSlogan.jpg">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zls_billboard.jpg">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zelus_logo_guidelines.png">
+  </div>
+
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/zls/zelus_type_guidelines.png">
+  </div>
+
+  <div class="fullImg">
+    <video src="Resources/htmlimg/zls/zls_medalVideo.mp4" autoplay muted loop></video>
+  </div>
+
+  <div class="row">
+    <div class="halfImg marginRight">
+      <video src="Resources/htmlimg/zls/badge rotate.mp4" autoplay loop muted></video>
+    </div>
+    <div class="halfImg marginLeft">
+      <img src="Resources/htmlimg/zls/zls_widget3x4.jpg">
+    </div>
+  </div>
+
+  <div class="fullImg lastImg">
+    <img src="Resources/htmlimg/zls/zls_poster.png">
+  </div>
+
+</body>
 </html>
