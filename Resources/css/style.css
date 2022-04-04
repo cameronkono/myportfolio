@@ -262,10 +262,12 @@ html,body {
     color: var(--backgroundColor);
     justify-content: center;
     align-items: center;
+    line-height: 200%;
 }
 
 .chubbLetters{
     font-family: "chubba";
+    line-height: 200%;
     font-size: 21vw;
     display: inline-block;
     letter-spacing: -0.05vw;
