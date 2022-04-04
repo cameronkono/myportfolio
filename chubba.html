@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <a href="index.html">Cameron Kono</a>
+        <a href="index.html">Work</a>
+        <a href="mailto:cameronkono@gmail.com">Contact</a>
+    </div>    
+
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
+
+  <div class="chubbImg firstImg">
+    <div class="chubbLetters">
+        Chubba
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom:80px;">
+    <div class="sixth mobileHalf">
+      Chubba
+    </div>
+    <div class="sixth mobileHalf">
+      Categories:
+      <br><br>
+      Type Design
+    </div>
+    <div class="half">
+      Take a sans-serif typeface and pump it chock-full of air. That was the idea behind Chubba, a rounded display sans that appears to be so thick and chunky it overlaps itself. Instead of having a traditional weight axis, Chubba has a variable optical-size axis to maintain legibility even at small sizes. This typeface is currently still in production. Numerals and more punctuation coming soon.
+      <br><br>
+      Current Version: v.0.1 Beta
+      <br><br>
+      <a href="#" class="goToArchive">↳ See archive for more Type Design</a>
+    </div>
+  </div>
+
+  <div class="comingSoon" style="margin-bottom:var(--universalMargin)">
+    - In Production -
+    <br>
+    Coming Soon
+  </div>
+<!--
+  <div class="fullImg chubbaWords">
+    <div class="chubbaWord">
+      <div class="sixth">100</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 100;">Mapo tofu:</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">90</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 90;">Szechuan</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">80</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 80;">Peppercorns</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">70</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 70;">Sesame oil</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">60</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 60;">Black bean</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">50</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 50;">Chili sauce</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">40</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 40;">Silken tofu</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">30</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 30;">Bird chilis</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">20</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 20;">Cane sugar</div>
+    </div>
+    <div class="chubbaWord">
+      <div class="sixth">10</div>
+      <div class="chubbaStyle" style="font-variation-settings: 'wght' 10;">Scallions</div>
+    </div>
+  </div>
+-->
+
+  <div class="row">
+    <a href="index.html" class="back">
+      ← Back
+    </a>
+  </div>
+
+</body>
+</html>

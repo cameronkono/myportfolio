@@ -4,16 +4,16 @@
 	box-sizing: border-box;
 }
 
-body {
+html,body {
     font-family: "sans";
-    font-feature-settings: "ss11";
+    font-feature-settings: "ss05";
     text-rendering: geometricPrecision;
-    font-variation-settings: 'wght' 450;
+    font-variation-settings: 'wght' 433;
     background-color: var(--backgroundColor);
-    line-height: 120%;
-    letter-spacing: 0.0em;
-    font-size: 18px;
+    line-height: 125%;
+    font-size: 20px;
     color: var(--textColor);
+    scroll-behavior: smooth;
 }
 
 
@@ -22,7 +22,27 @@ body {
 
 @font-face {
     font-family: 'sans';
-    src: url(fonts/sansVF.ttf);
+    src: url(fonts/sans44VF.ttf);
+}
+
+@font-face {
+    font-family: 'flatty';
+    src: url(fonts/flattyVF.ttf);
+}
+
+@font-face {
+    font-family: 'swiss27';
+    src: url(fonts/Swiss27VF.ttf);
+}
+
+@font-face {
+    font-family: 'mono';
+    src: url(fonts/monoVF.ttf);
+}
+
+@font-face {
+    font-family: 'chubba';
+    src: url(fonts/boboVF.ttf);
 }
 
 @font-face {
@@ -38,7 +58,7 @@ body {
 
 @font-face {
     font-family: 'serif';
-    src: url(fonts/PlantinMTProRg.TTF);
+    src: url(fonts/OSKVF.ttf);
 }
 
 :root {
@@ -60,19 +80,19 @@ body {
     width: 100vw;
     z-index: 20;
     position: fixed;
-    transition: transform 0.5s;
     justify-content: space-between;
-    font-size: 4.75vw;
-    margin-top: 1vw;
+    font-size: 5.5vw;
+    line-height: 80%;
     background: transparent;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
     font-variation-settings: "wght" 700;
     mix-blend-mode: difference;
+    transition: transform 0.5s;
 }
 
 .nav.hidden {
-    transform: translateY(-150%);
+    transform: translateY(-100%);
 }
 
 .nav ul {
@@ -85,14 +105,9 @@ body {
     color: white;
 }
 
-.activeLink {
-    opacity: 50%;
-}
-
 .nav a:hover {
-    color: grey;
+    text-decoration: underline;
 }
-
 
 
 /* ------- COLUMNS ------- */
@@ -134,7 +149,7 @@ body {
 }
 
 .fiveSixths {
-    width: 82.5;
+    width: 82.5%;
 }
 
 .spaceBetween {
@@ -155,7 +170,6 @@ body {
 .row {
     display: flex;
     padding: var(--halfUniversalMargin) var(--universalMargin);
-    margin-bottom: 240px;
 }
 
 .stickyRow {
@@ -167,20 +181,13 @@ body {
     padding: var(--navVerticalMargin) var(--universalMargin);
 }
 
-.descRow {
-    padding: 0 var(--universalMargin);
-}
-
 .imgRow {
     display: flex;
     justify-content: space-between;
 }
 
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 500px;
-    background: var(--textColor);
+.firstRow {
+    padding-top: 200px;
 }
 
 .marginRight {
@@ -196,7 +203,7 @@ body {
 /* ------- IMAGES ------- */
 
 .firstImg {
-    margin-bottom: 80px;
+    margin-bottom:  var(--universalMargin);
 }
 
 .firstImg img {
@@ -243,13 +250,202 @@ body {
     width: 100%;
 }
 
-.lastImg {
-    margin-bottom: 240px;
+
+/*------- CHUBBA ------*/
+
+.chubbImg {
+    width: 100vw;
+    height: 62.5vw;
+    padding-top: var(--universalMargin);
+    display: flex;
+    background: var(--textColor);
+    color: var(--backgroundColor);
+    justify-content: center;
+    align-items: center;
 }
+
+.chubbLetters{
+    font-family: "chubba";
+    font-size: 21vw;
+    display: inline-block;
+    letter-spacing: -0.05vw;
+    animation: weightChange 3s infinite;
+}
+
+/*
+.chubbaC {
+    animation: weightChange 2s infinite;
+}
+
+.chubbaH {
+    animation: weightChange 2s infinite;
+    animation-delay: 0.15s;
+}
+
+.chubbaU {
+    animation: weightChange 2s infinite;
+    animation-delay: 0.3s;
+}
+
+.chubbaBone {
+    animation: weightChange 2s infinite;
+    animation-delay: 0.45s;
+}
+
+.chubbaBtwo {
+    animation: weightChange 2s infinite;
+    animation-delay: 0.6s;
+}
+
+.chubbaA {
+    animation: weightChange 2s infinite;
+    animation-delay: 0.75s;
+}
+*/
+
+@keyframes weightChange {
+    0%   {font-variation-settings: 'wght' 100;}
+    50%  {font-variation-settings: 'wght' 10;}
+    100%  {font-variation-settings: 'wght' 100;}
+}
+
+.comingSoon {
+    font-family: "chubba";
+    width: 100vw;
+    font-size: 10.5vw;
+    line-height: 85%;
+    font-variation-settings: 'wght' 66;
+    text-align: center;
+    padding: var(--universalMargin) 0px;
+}
+
+.chubbaStyle {
+    font-family: "chubba";
+    font-size: 12vw;
+    line-height: 80%;
+}
+
+.chubbaWord {
+    display: flex;
+
+}
+
+/*------- OTHER ------*/
+
+.goToArchive {
+    color: var(--textColor);
+    text-decoration:none;
+}
+
+.goToArchive:hover {
+    text-decoration: underline;
+}
+
+.back {
+    background: var(--textColor);
+    color: var(--backgroundColor);
+    font-size: 20vw;
+    line-height: 30vw;
+    width: 100%;
+    text-align: center;
+    border-radius: 5000px;
+    padding: var(--universalMargin);
+    text-decoration: none;
+}
+
+.back:hover {
+    background: lightgray;
+    color: dimgray;
+}
+
+
+
+
+
+
+.workCont {
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+    padding: 200px var(--universalMargin);
+}
+
+
+
+
+
+
+
+
+
+
+
+.secondNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    padding: 12px;
+    background: var(--backgroundColor);
+    z-index: 20;
+    border-bottom: 2px solid black;
+}
+
+.secondNav a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.secondNav a:hover{
+    background: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+.sidebar {
+    width: 33%;
+    height: 100vh;
+    overflow: scroll;
+    padding-right: 12px;
+    padding-top: 63px;
+    line-height: 130%;
+    position: fixed;
+    right:0;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.sidebar a:hover{
+    background: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+.sidebarImg {
+    padding: 4px 12px;
+    width: 66%;
+}
+
+.sidebarImg img{
+    width: 100%;
+}
+
+.sidebarImg video{
+    width: 100%;
+}
+
+
+.sidebarFirstImg {
+    padding-top: 63px;
+}
+
+
+/*------- MEDIA QUERIES ------*/
 
 @media only screen and (max-width: 910px) {
     body {
-        letter-spacing: 0.01em;
         font-size: 16px;
     }
 }

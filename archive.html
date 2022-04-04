@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <a href="index.html">Cameron Kono</a>
+        <a href="index.html">Work</a>
+        <a href="mailto:cameronkono@gmail.com">Contact</a>
+      </div>    
+
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
+  <div class="row firstRow" style="margin-bottom:var(--universalMargin);">
+    <div class="sixth mobileHalf">
+      Zelus
+    </div>
+    <div class="sixth mobileHalf">
+      Categories:
+      <br><br>
+      Type Design<br>
+      Logos<br>
+        3D
+    </div>
+    <div class="half mobileFull">
+        This page is a collection of various things and projects that I've worked on, such as in-progress type design, 3D and illustrative exerciese and logo work.
+    </div>
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/treedom.png">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/castMono1.png">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/sans_thumbsquare.png">
+  </div>
+  
+  <div class="row">
+      <a href="index.html" class="back">
+        ← Back
+      </a>
+  </div>
+
+</body>
+</html>
