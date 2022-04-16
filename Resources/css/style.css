@@ -8,7 +8,7 @@ html,body {
     font-family: "flatty";
     font-feature-settings: "liga" on;
     text-rendering: geometricPrecision;
-    font-variation-settings: 'wght' 475;
+    font-variation-settings: 'wght' 300;
     background-color: var(--backgroundColor);
     line-height: 135%;
     font-size: 24px;
