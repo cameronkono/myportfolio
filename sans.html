@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Kono - Chubba</title>
+
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="nav" id="nav">
+    <div class="half">
+      <a href="index.html">Cameron Kono</a>
+    </div>
+    <div class="half" style="
+    display: flex;
+    justify-content: flex-end;">
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="mailto:cameronkono@gmail.com">Contact</a></li>
+    </ul>
+    </div>
+  </div>    
+
+  <script>
+    var lastScrollTop = 0;
+    $(window).scroll(function(){
+      var st = $(this).scrollTop();
+      var nav = $('.nav');
+      setTimeout(function(){
+        if (st > lastScrollTop){
+          $('#nav').addClass('hidden');
+        } else {
+          $('#nav').removeClass('hidden');
+        }
+        lastScrollTop = st;
+      }, 100);
+    });
+  </script>
+
+ 
+  <div class="firstImg">
+    <img src="Resources/htmlimg/sans/sansCover.jpg">
+  </div>
+
+  <div class="row" style="padding-bottom: var(--universalMargin);">
+    <div class="mobileRow">
+      <div class="quarter" style="font-variation-settings: 'wght' 700;">
+        Sans22
+      </div>
+      <div class="quarter">
+      </div>
+    </div>
+    <div class="half">
+      Sans22 is my personal study of the swiss neo-grotesque classics drawn by the likes of Walter Kach, Karl Gerstner, Max Miedinger and Adrian Frutiger, just to name a few. This typeface takes inspiration from the neutrality and rationality of Swiss neo-grotesque typefaces, while retaining a certain amount of warmth due to its more geometric influences. Sans22 also plays well at small sizes thanks to it's higher contrast and extended letterforms of conventionally narrow glyphs. This typeface is still a work in progress, with more weights, axes and italics coming soon.
+      <br><br>
+      Particular influences include:<br>
+      Neue Haas Unica (Team 77)<br>
+      Programm (Karl Gerstner)<br>
+      Neue Haas Grotesk (Eduard Hoffmann & Max Miedingner)<br>
+      Rontgentherapie/Rauchwaren (Walter Kach)
+      <br><br>
+      Feel Free to try out the available charset below.
+      <br><br>
+      Current Version: v.1.01 Alpha
+      <br><br>
+      <a href="#" class="goToArchive">↳ See archive for more Type Design</a>
+    </div>
+  </div>
+
+
+  <div class="testerControls" style="font-size: 14px;">
+      <div class="sliderCont">
+        <div class="sliderLabel">
+            Weight:&nbsp;<span class="weight-fett" id="weight-fett"></span>
+        </div>
+        <input class="weight-slider-fett" type="range" min="300" max="800" step="1" id="weight-slider-fett" value="800">
+      </div>
+
+      <div class="sliderCont">
+        <div class="sliderLabel">
+            Size:&nbsp;<span class="font-size-fett" id="font-size-fett"></span>
+        </div>
+          <input class="size-slider-fett" type="range" min=".5" max="70" step=".01" id="size-slider-fett" value="5.6">
+      </div>
+
+      <div class="sliderCont">
+          <div class="sliderLabel">
+              Spacing:&nbsp;<span class="letter-spacing-fett" id="letter-spacing-fett"></span>
+          </div>
+          <input class="letter-spacing-slider-fett" type="range" min="-0.15" max="0.25" step=".001" id="letter-spacing-slider-fett" value="-0.015">
+      </div>
+
+      <div class="sliderCont">
+          <div class="sliderLabel">
+              Leading:&nbsp;<span class="leading-fett" id="leading-fett"></span>
+          </div>
+          <input class="leading-slider-fett" type="range" min="70" max="200" step="1" id="leading-slider-fett" value="100">
+      </div>
+
+  </div>
+  
+  <div class="tester-alternates" style="font-size: 14px;">
+    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Alt a (“Rontgentherapie”)</div>
+    <div class="btn btn-fett" id="btn-fett2" data-value="ss10">Round dots</div>
+    <div class="btn btn-fett" id="btn-fett5" data-value="ss06">Alt G</div>
+    <div class="btn btn-fett" id="btn-fett4" data-value="ss04">Helvetic t f r</div>
+    <div class="btn btn-fett" id="btn-fett3" data-value="ss03">Alt arrows</div>
+  </div>
+  
+  <!-- FOR DISPLAYING FONT SIZE & LETTER SPACING ON LOAD -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var slider = document.getElementById('weight-slider-fett');
+        var output = document.getElementById('weight-fett');
+        output.innerHTML =(slider.value);
+    })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var slider = document.getElementById('size-slider-fett');
+        var output = document.getElementById('font-size-fett');
+        output.innerHTML =(Math.round(window.innerWidth * slider.value / 100) + 'px');
+    })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var slider = document.getElementById('letter-spacing-slider-fett');
+        var output = document.getElementById('letter-spacing-fett');
+        output.innerHTML =(slider.value + 'em');
+    })
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var slider = document.getElementById('leading-slider-fett');
+        var output = document.getElementById('leading-fett');
+        output.innerHTML =(slider.value + '%');
+    })
+  </script>
+
+  <!-- FOR CHANGING WEIGHT -->
+  <script>
+    $('.weight-slider-fett').on('input', function() {
+    var v = $(this).val();
+    $('.text-input-fett').css('font-variation-settings', ('"wght"' + v))
+    $('.weight-fett').html(v);
+    });
+  </script>
+  
+  <!-- FOR CHANGING FONT SIZE -->
+  <script>
+    $('.size-slider-fett').on('input', function() {
+    var v = $(this).val();
+    $('.text-input-fett').css('font-size', v + 'vw')
+    $('.font-size-fett').html(Math.round(window.innerWidth * v / 100) + 'px');
+    });
+  </script>
+  
+  <!-- FOR CHANGING LETTER SPACING -->
+  <script>
+    $('.letter-spacing-slider-fett').on('input', function() {
+    var v = $(this).val();
+    $('.text-input-fett').css('letter-spacing', v + 'em')
+    $('.letter-spacing-fett').html(v + 'em');
+    });
+  </script>
+  
+  <!-- FOR CHANGING LEADING -->
+  <script>
+    $('.leading-slider-fett').on('input', function() {
+    var v = $(this).val();
+    $('.text-input-fett').css('line-height', v + '%')
+    $('.leading-fett').html(v + '%');
+    });
+  </script>
+  
+  <!-- FOR ALTERNATES -->
+  <script>
+    $(document).ready(function() {
+        var array = [];
+        
+        $(".btn-fett").click(function() {
+            var data = "'" + $(this).data("value") + "'",
+                index = array.indexOf(data),
+                style_value;
+            
+            if (index == -1) {
+            array.push(data);
+            } else {
+            array.splice(index, 1);
+            }
+  
+            if (array.length > 0) {
+            style_value = array.join(",");
+            $("#type-tester-fett").attr('style',
+                "-moz-font-feature-settings:" + style_value + ";" +
+                "-webkit-font-feature-settings:" + style_value + ";" +
+                "font-feature-settings:" + style_value ) + ";"
+            } else {
+            $("#type-tester-fett").attr('style','');
+            }
+            $('#type-tester-fett span').css($('#type-tester-fett').attr('style'))
+            console.log(index)
+            console.log(data)
+            console.log(array)
+            console.log(style_value)
+        });
+    });
+  </script>
+  
+  <script>
+    document.getElementById("btn-fett").addEventListener("click", function(event) {
+        document.getElementById("btn-fett").classList.toggle('on');
+    });
+    document.getElementById("btn-fett2").addEventListener("click", function(event) {
+        document.getElementById("btn-fett2").classList.toggle('on');
+    });
+    document.getElementById("btn-fett3").addEventListener("click", function(event) {
+        document.getElementById("btn-fett3").classList.toggle('on');
+    });
+    document.getElementById("btn-fett4").addEventListener("click", function(event) {
+        document.getElementById("btn-fett4").classList.toggle('on');
+    });
+    document.getElementById("btn-fett5").addEventListener("click", function(event) {
+        document.getElementById("btn-fett5").classList.toggle('on');
+    });
+  </script>
+  
+  <div class="type-tester" id="type-tester-fett">
+    <div class="text-input-fett" id="text-input-fett" contenteditable="true" spellcheck="false">
+        <span>
+        The Group B regulations fostered some of the fastest, most powerful, and most sophisticated rally cars ever built. It is commonly referred to as the golden era of rallying.
+        </span>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="row">
+    <a href="index.html" class="back">
+      <div class="backText">
+        ← Back
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>

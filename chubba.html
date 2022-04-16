@@ -10,11 +10,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="nav" id="nav">
-        <a href="index.html">Cameron Kono</a>
-        <a href="index.html">Work</a>
-        <a href="mailto:cameronkono@gmail.com">Contact</a>
-    </div>    
+  <div class="nav" id="nav">
+    <div class="half">
+      <a href="index.html">Cameron Kono</a>
+    </div>
+    <div class="half" style="
+    display: flex;
+    justify-content: flex-end;">
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="mailto:cameronkono@gmail.com">Contact</a></li>
+    </ul>
+    </div>
+  </div>   
 
   <script>
     var lastScrollTop = 0;
@@ -38,26 +46,29 @@
     </div>
   </div>
 
-  <div class="row" style="margin-bottom:80px;">
-    <div class="sixth mobileHalf">
-      Chubba
-    </div>
-    <div class="sixth mobileHalf">
-      Categories:
-      <br><br>
-      Type Design
+  <div class="row" style="padding-bottom: var(--universalMargin);">
+    <div class="mobileRow">
+      <div class="quarter">
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">PROJECT:</span>
+        <br>
+        Chubba (WIP)
+        <br><br>
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">ROLES:</span>
+        <br>
+        Type Design
+      </div>
+      <div class="quarter">
+      </div>
     </div>
     <div class="half">
-      Take a sans-serif typeface and pump it chock-full of air. That was the idea behind Chubba, a rounded display sans that appears to be so thick and chunky it overlaps itself. Instead of having a traditional weight axis, Chubba has a variable optical-size axis to maintain legibility even at small sizes. This typeface is currently still in production. Numerals and more punctuation coming soon.
+      Take a sans-serif typeface and pump it chock-full of air. That was the idea behind Chubba, a rounded display sans that appears to be so full and chunky it overlaps itself. Instead of having a traditional weight axis, Chubba has a variable optical-size axis to maintain legibility even at small sizes. This typeface is currently still in production. Numerals and more punctuation coming soon.
       <br><br>
       Current Version: v.0.1 Beta
-      <br><br>
-      <a href="#" class="goToArchive">↳ See archive for more Type Design</a>
     </div>
   </div>
 
   <div class="comingSoon" style="margin-bottom:var(--universalMargin)">
-    - In Production -
+    — In Production —
     <br>
     Coming Soon
   </div>
@@ -106,11 +117,13 @@
   </div>
 -->
 
-  <div class="row">
-    <a href="index.html" class="back">
+<div class="row">
+  <a href="index.html" class="back">
+    <div class="backText">
       ← Back
-    </a>
-  </div>
+    </div>
+  </a>
+</div>
 
 </body>
 </html>

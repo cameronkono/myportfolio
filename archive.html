@@ -10,11 +10,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="nav" id="nav">
-        <a href="index.html">Cameron Kono</a>
-        <a href="index.html">Work</a>
-        <a href="mailto:cameronkono@gmail.com">Contact</a>
-      </div>    
+  <div class="nav" id="nav">
+    <div class="half">
+      <a href="index.html">Cameron Kono</a>
+    </div>
+    <div class="half" style="
+    display: flex;
+    justify-content: flex-end;">
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="mailto:cameronkono@gmail.com">Contact</a></li>
+    </ul>
+    </div>
+  </div>     
 
   <script>
     var lastScrollTop = 0;
@@ -31,39 +39,104 @@
       }, 100);
     });
   </script>
-  <div class="row firstRow" style="margin-bottom:var(--universalMargin);">
-    <div class="sixth mobileHalf">
-      Zelus
+
+  <div class="row" style="padding: var(--universalMargin) var(--halfUniversalMargin); padding-top: var(--doubleUniversalMargin);">
+    <div class="mobileRow">
+      <div class="">
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">PROJECT:</span>
+        <br>
+        Archive
+        <br><br>
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">ROLES:</span>
+        <br>
+        Type Design, Logos, 3D, Textiles, Furniture
+      </div>
     </div>
-    <div class="sixth mobileHalf">
-      Categories:
-      <br><br>
-      Type Design<br>
-      Logos<br>
-        3D
-    </div>
-    <div class="half mobileFull">
-        This page is a collection of various things and projects that I've worked on, such as in-progress type design, 3D and illustrative exerciese and logo work.
+    <div class="half">
+      This page is a collection of various things, projects, and previous works.
     </div>
   </div>
 
   <div class="fullImg">
-    <img src="Resources/htmlimg/arch/treedom.png">
+    <img src="Resources/htmlimg/arch/amoeba.jpg">
   </div>
+  
+  <div class="row">
+    <div class="twoThirdsImg centerImg">
+      <img src="Resources/htmlimg/arch/shopnulla.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="halfImg centerImg">
+      <img src="Resources/htmlimg/arch/IMG_0997.JPG">
+    </div>
+  </div>
+  
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/amorous_cassette.jpg">
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/cirocca.png">
+  </div>
+    
+  <div class="row">
+    <div class="halfImg centerImg">
+      <img src="Resources/htmlimg/arch/irri.JPG">
+    </div>
+  </div>
+
+  <div class="fullImg">
+    <img src="Resources/htmlimg/arch/tearsmult.jpg">
+  </div>
+<!--
+  <div class="row">
+    <div class="halfImg marginRight">
+      <img src="Resources/htmlimg/arch/castMonoAlphabet.png">
+    </div>
+    <div class="halfImg marginLeft">
+      <img src="Resources/htmlimg/arch/castMonoLetters.png">
+    </div>
+  </div>
+-->
+<div class="fullImg">
+  <img src="Resources/htmlimg/arch/monotwo.png">
+</div>
 
   <div class="fullImg">
     <img src="Resources/htmlimg/arch/castMono1.png">
   </div>
 
+  <div class="row">
+    <div class="halfImg centerImg">
+      <img src="Resources/htmlimg/arch/subsurfA.jpg">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="halfImg marginRight">
+      <img src="Resources/htmlimg/arch/IMG_1431.jpg">
+    </div>
+    <div class="halfImg marginLeft">
+      <img src="Resources/htmlimg/arch/IMG_2619.jpg">
+    </div>
+  </div>
+  <div class="row" style="margin-top: var(--halfUniversalMargin);">
+    End Table (keyhole mounted)
+  </div>
+      
   <div class="fullImg">
     <img src="Resources/htmlimg/arch/sans_thumbsquare.png">
   </div>
-  
+    
   <div class="row">
-      <a href="index.html" class="back">
+    <a href="index.html" class="back">
+      <div class="backText">
         ← Back
-      </a>
-  </div>
+      </div>
+    </a>
+</div>
 
 </body>
 </html>
