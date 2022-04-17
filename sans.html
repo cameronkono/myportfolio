@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Kono - Chubba</title>
+
+    <title>Cameron Kono — Flatty</title>
 
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -42,19 +43,25 @@
 
  
   <div class="firstImg">
-    <img src="Resources/htmlimg/sans/sansCover.jpg">
+    <img src="Resources/htmlimg/sans/sans_cover.svg">
   </div>
 
   <div class="row" style="padding-bottom: var(--universalMargin);">
     <div class="mobileRow">
-      <div class="quarter" style="font-variation-settings: 'wght' 700;">
-        Sans22
+      <div class="quarter">
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">PROJECT:</span>
+        <br>
+        Flatty
+        <br><br>
+        <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">ROLES:</span>
+        <br>
+        Type Design
       </div>
       <div class="quarter">
       </div>
     </div>
     <div class="half">
-      Sans22 is my personal study of the swiss neo-grotesque classics drawn by the likes of Walter Kach, Karl Gerstner, Max Miedinger and Adrian Frutiger, just to name a few. This typeface takes inspiration from the neutrality and rationality of Swiss neo-grotesque typefaces, while retaining a certain amount of warmth due to its more geometric influences. Sans22 also plays well at small sizes thanks to it's higher contrast and extended letterforms of conventionally narrow glyphs. This typeface is still a work in progress, with more weights, axes and italics coming soon.
+      Flatty is my personal study of the swiss neo-grotesque classics drawn by the likes of Walter Kach, Karl Gerstner, Max Miedinger and Adrian Frutiger, just to name a few. This typeface takes inspiration from the neutrality and rationality of Swiss neo-grotesque typefaces, while retaining a certain amount of warmth due to its more geometric influences. This typeface is still a work in progress, with more symbols, weights and italics coming soon.
       <br><br>
       Particular influences include:<br>
       Neue Haas Unica (Team 77)<br>
@@ -66,44 +73,44 @@
       <br><br>
       Current Version: v.1.01 Alpha
       <br><br>
-      <a href="#" class="goToArchive">↳ See archive for more Type Design</a>
+      <a href="archive.html" class="goToArchive">↳ See archive for more Type Design</a>
     </div>
   </div>
 
 
-  <div class="testerControls" style="font-size: 14px;">
+  <div class="testerControls" style="font-size: 14px;  font-variation-settings: 'wght' 575;">
       <div class="sliderCont">
         <div class="sliderLabel">
-            Weight:&nbsp;<span class="weight-fett" id="weight-fett"></span>
+            Font Weight:&nbsp;<span class="weight-fett" id="weight-fett"></span>
         </div>
-        <input class="weight-slider-fett" type="range" min="300" max="800" step="1" id="weight-slider-fett" value="800">
+        <input class="weight-slider-fett" type="range" min="300" max="800" step="1" id="weight-slider-fett" value="575">
       </div>
 
       <div class="sliderCont">
         <div class="sliderLabel">
-            Size:&nbsp;<span class="font-size-fett" id="font-size-fett"></span>
+            Font Size:&nbsp;<span class="font-size-fett" id="font-size-fett"></span>
         </div>
-          <input class="size-slider-fett" type="range" min=".5" max="70" step=".01" id="size-slider-fett" value="5.6">
+          <input class="size-slider-fett" type="range" min=".5" max="70" step=".01" id="size-slider-fett" value="6.2">
       </div>
 
       <div class="sliderCont">
           <div class="sliderLabel">
-              Spacing:&nbsp;<span class="letter-spacing-fett" id="letter-spacing-fett"></span>
+              Letter Spacing:&nbsp;<span class="letter-spacing-fett" id="letter-spacing-fett"></span>
           </div>
           <input class="letter-spacing-slider-fett" type="range" min="-0.15" max="0.25" step=".001" id="letter-spacing-slider-fett" value="-0.015">
       </div>
 
       <div class="sliderCont">
           <div class="sliderLabel">
-              Leading:&nbsp;<span class="leading-fett" id="leading-fett"></span>
+              Line Height:&nbsp;<span class="leading-fett" id="leading-fett"></span>
           </div>
           <input class="leading-slider-fett" type="range" min="70" max="200" step="1" id="leading-slider-fett" value="100">
       </div>
 
   </div>
   
-  <div class="tester-alternates" style="font-size: 14px;">
-    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Alt a (“Rontgentherapie”)</div>
+  <div class="tester-alternates" style="display: none; font-size: 14px; font-variation-settings: 'wght' 575;">
+    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Alt a</div>
     <div class="btn btn-fett" id="btn-fett2" data-value="ss10">Round dots</div>
     <div class="btn btn-fett" id="btn-fett5" data-value="ss06">Alt G</div>
     <div class="btn btn-fett" id="btn-fett4" data-value="ss04">Helvetic t f r</div>

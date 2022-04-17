@@ -6,12 +6,12 @@
 
 html,body {
     font-family: "flatty";
-    font-feature-settings: "liga" on;
+    font-feature-settings: "ss02", "liga" on;
     text-rendering: geometricPrecision;
     font-variation-settings: 'wght' 300;
     background-color: var(--backgroundColor);
     line-height: 135%;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: -0.0em;
     color: var(--textColor);
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@ html,body {
 
 @font-face {
     font-family: 'rit';
-    src: url(fonts/ritTail2VF.ttf);
+    src: url(fonts/ritFlatVF.ttf);
 }
 
 @font-face {
@@ -85,7 +85,7 @@ html,body {
 }
 
 .nav li{
-    margin-left: var(--universalMargin);
+    margin-left: 40px;
 }
 
 .nav a {
@@ -266,6 +266,89 @@ html,body {
     padding: var(--universalMargin) 0px;
 }
 
+
+
+/* ------- INDEX ------- */
+
+.indexRowOne {
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px var(--halfUniversalMargin);
+    padding-top: var(--universalMargin);
+}
+
+.zelusThumb {
+    width: 44%;
+}
+
+.zelusThumb img {
+    width: 100%;
+}
+
+.lashbarThumb {
+    margin-left: var(--halfUniversalMargin);
+    width: 56%;
+}
+
+.lashbarThumb img{
+    width: 100%;
+}
+
+.weirdStack {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    padding: var(--halfUniversalMargin);
+}
+
+.indexRowTwo {
+    width: 56%;
+    display: block;
+    padding-right: var(--halfUniversalMargin);
+}
+
+.indexRowThree {
+    width: 44%;
+    display: block;
+}
+
+.flattyThumb {
+    width: 100%;
+}
+
+.flattyThumb img {
+    width: 100%;
+}
+
+.archiveThumb {
+    margin-top: var(--halfUniversalMargin);
+    width: 100%;
+}
+
+.archiveThumb img {
+    width: 100%;
+}
+
+.chubbaThumb {
+    width: 100%;
+}
+
+.chubbaThumb img {
+    width: 100%;
+}
+
+.thumb a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.thumb:hover {
+    opacity: 50%;
+}
+
+
+
 /*------- CHUBBA ------*/
 
 .chubbImg {
@@ -344,7 +427,6 @@ html,body {
 
 .chubbaWord {
     display: flex;
-
 }
 
 /*------- OTHER ------*/
@@ -389,19 +471,6 @@ html,body {
 
 
 
-.workCont {
-    display: flex;
-    flex-direction: column;
-    line-height: 120%;
-    padding: 200px var(--universalMargin);
-}
-
-
-
-
-
-
-
 
 
 
@@ -434,14 +503,14 @@ input[type="range"] {
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 input[type="range"]::-webkit-slider-runnable-track {
     background: var(--bgOffsetColor);
-    height: 16px;
+    height: 12px;
 }
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     background-color: var(--textColor);
-    height: 16px;
-    width: 16px;    
+    height: 12px;
+    width: 12px;    
 }
 /***** Focus Styles *****/
 /* Removes default focus */
@@ -468,22 +537,20 @@ input[type="range"]:focus::-webkit-slider-thumb {
     width: 100%;
 }
 
-
+.sliderLabel {
+    margin-bottom: 8px;
+}
 
 
 .tester-alternates {
     padding-left: var(--halfUniversalMargin);
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 .btn {
     display:inline-flex;
-    padding: 4px 10px;
-    line-height: 100%;
-    align-items: center;
-    margin: 0px;
-    background: var(--bgOffsetColor);
-    border-radius: 20px;
+    line-height: 135%;
+    margin-right: var(--halfUniversalMargin);
     cursor: pointer;
 }
 
@@ -497,12 +564,12 @@ input[type="range"]:focus::-webkit-slider-thumb {
     padding-top: 50px;
     height: fit-content;
     overflow-y: hidden;
-    padding-bottom: var(--universalMargin);
+    padding-bottom: var(--doubleUniversalMargin);
 }
 
 .text-input-fett {
-    font-variation-settings: 'wght' 800;
-    font-size: 5.6vw;
+    font-variation-settings: 'wght' 575;
+    font-size: 6.2vw;
     letter-spacing: -0.015em;
     line-height: 100%;
 }
@@ -521,24 +588,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
 .on {
-    background: var(--textColor);
-    color: var(--backgroundColor);
-}
-
-/*-------FOOTER-------*/
-
-.footer {
-    background: springgreen;
-    cursor: pointer;
-    color: #000;
-    margin: var(--halfUniversalMargin);
-    display: flex;
-    justify-content: center;
-    border-radius: 2000px;
-    padding: 100px 20px;
-    margin-top: 120px;
-    font-size: 8vw;
-
+    opacity: 50%;
 }
 
 
@@ -583,7 +633,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 @media only screen and (max-width: 910px) {
 
     html,body {
-        font-size: 21px;
+        font-size: 18px;
     }
 
 
@@ -613,7 +663,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
     .twoThirdsImg {
         width: 100%;
     }
-    
 
     .mobileRow {
         display: flex;
@@ -621,12 +670,81 @@ input[type="range"]:focus::-webkit-slider-thumb {
         margin-bottom: var(--universalMargin);
     }
 
+
+
+
+
+
+    .indexRowOne {
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        padding: 0px var(--halfUniversalMargin);
+        padding-top: var(--universalMargin);
+    }
+
+    .indexRowOne {
+        display: block;
+        padding-top: var(--doubleUniversalMargin);
+    }
+
+    .zelusThumb {
+        width: 100%;
+    }
+
+    .zelusThumb img {
+        width: 100%;
+    }
+
+    .lashbarThumb {
+        margin-left: 0px;
+        margin-top: var(--halfUniversalMargin);
+        width: 100%;
+    }
+
+    .lashbarThumb img{
+        width: 100%;
+    }
+
+    .weirdStack {
+        width: 100vw;
+        display: block;
+        padding: var(--halfUniversalMargin);
+    }
+
+    .indexRowTwo {
+        width: 100%;
+        display: block;
+        padding-right: 0px;
+    }
+
+    .indexRowThree {
+        width: 100%;
+        display: block;
+        padding-top: var(--halfUniversalMargin);
+    }
+
+    .flattyThumb {
+        width: 100%;
+    }
+
+
+
+
+
+
     .comingSoon {
         font-size: 10.35vw;
     }
 
     .testerControls {
         display: block;
+    }
+
+
+    .sliderLabel {
+        margin-top: 8px;
+        margin-bottom: 0px;
     }
     
     .sliderCont {
@@ -636,10 +754,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
     .text-input-fett {
-        font-variation-settings: 'wght' 800;
-        font-size: 8vw;
-        letter-spacing: -0.015em;
-        line-height: 100%;
+        font-size: 8.1vw;
     }
     
 }
