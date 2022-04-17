@@ -59,6 +59,17 @@ html,body {
     --quarterUniversalMargin: 0.5vw;
 }
 
+.bodydark{
+    --backgroundColor: black;
+    --textColor: white;
+    --bgOffsetColor: #111;
+    --doubleUniversalMargin: 16vw;
+    --universalMargin: 8vw;
+    --navMargin: 2vw;
+    --halfUniversalMargin: 2vw;
+    --quarterUniversalMargin: 0.5vw;
+}
+
 ::selection {
     color: var(--backgroundColor);
     background:  var(--textColor);
@@ -500,6 +511,7 @@ html,body {
     width: 96vw;
     margin-left: var(--halfUniversalMargin);
     display: flex;
+    align-items: flex-end;
     font-size: 14px;
     font-variation-settings: 'wght' 575;
 }
@@ -583,10 +595,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .text-input-fett {
-    font-variation-settings: 'wght' 575;
+    font-variation-settings: 'wght' 675;
     font-size: 8.2vw;
-    letter-spacing: -0.015em;
-    line-height: 100%;
+    letter-spacing: -0.02em;
+    line-height: 105%;
 }
 
 .type-tester [contenteditable] {
