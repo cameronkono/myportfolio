@@ -71,6 +71,7 @@ html,body {
 .nav {
     display: flex;
     padding: var(--navMargin) var(--halfUniversalMargin);
+    padding-bottom: 0px;
     width: 100vw;
     z-index: 20;
     position: fixed;
@@ -656,6 +657,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
         --navMargin: 4vw;
         --halfUniversalMargin: 4vw;
         --quarterUniversalMargin: 0vw;
+    }
+    
+    .nav.hidden {
+        transform: translateY(0%);
     }
 
     .nav li{
