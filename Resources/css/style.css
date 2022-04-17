@@ -11,7 +11,7 @@ html,body {
     text-rendering: geometricPrecision;
     font-variation-settings: 'wght' 300;
     background-color: var(--backgroundColor);
-    line-height: 135%;
+    line-height: 133%;
     font-size: 22px;
     letter-spacing: 0.0em;
     color: var(--textColor);
@@ -57,6 +57,11 @@ html,body {
     --navMargin: 2vw;
     --halfUniversalMargin: 2vw;
     --quarterUniversalMargin: 0.5vw;
+}
+
+::selection {
+    color: var(--backgroundColor);
+    background:  var(--textColor);
 }
 
 
@@ -356,8 +361,8 @@ html,body {
     width: 100vw;
     padding: var(--universalMargin);
     display: flex;
-    background: var(--textColor);
-    color: var(--backgroundColor);
+    background: var(--backgroundColor);
+    color: var(--textColor);
     justify-content: center;
     align-items: center;
     line-height: 200%;
@@ -366,7 +371,7 @@ html,body {
 .chubbLetters{
     font-family: "chubba";
     line-height: 200%;
-    font-size: 21vw;
+    font-size: 22.2vw;
     display: inline-block;
     letter-spacing: -0.05vw;
     animation: weightChange 3s infinite;
@@ -411,12 +416,17 @@ html,body {
 
 .comingSoon {
     font-family: "chubba";
+    color: var(--textColor);
     width: 100vw;
     font-size: 10.85vw;
-    line-height: 85%;
+    line-height: 95%;
     font-variation-settings: 'wght' 66;
     text-align: center;
-    padding: var(--universalMargin) 0px;
+    margin: var(--universalMargin) 0px;
+}
+
+.comingSoon:hover {
+    color:var(--bgOffsetColor);
 }
 
 .chubbaStyle {
@@ -457,6 +467,7 @@ html,body {
 
 .back:hover {
     background-color: var(--bgOffsetColor);
+    color: var(--textColor);
 }
 
 .back:hover .backText{
@@ -742,7 +753,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
     .comingSoon {
         font-size: 10.35vw;
-        padding: var(--doubleUniversalMargin) 0px;
     }
 
     .testerControls {
