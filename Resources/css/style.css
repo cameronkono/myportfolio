@@ -488,6 +488,8 @@ html,body {
     width: 96vw;
     margin-left: var(--halfUniversalMargin);
     display: flex;
+    font-size: 14px;
+    font-variation-settings: 'wght' 575;
 }
 
 
@@ -634,7 +636,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 @media only screen and (max-width: 910px) {
 
     html,body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
 
@@ -739,6 +741,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
     }
 
     .testerControls {
+        font-size: 12px;
         display: block;
     }
 
