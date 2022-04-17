@@ -13,7 +13,7 @@ html,body {
     background-color: var(--backgroundColor);
     line-height: 135%;
     font-size: 22px;
-    letter-spacing: -0.0em;
+    letter-spacing: 0.0em;
     color: var(--textColor);
     scroll-behavior: smooth;
 }
@@ -645,6 +645,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
         --navMargin: 4vw;
         --halfUniversalMargin: 4vw;
         --quarterUniversalMargin: 0vw;
+    }
+
+    .nav li{
+        margin-left: var(--halfUniversalMargin);
     }
 
     .quarter {
