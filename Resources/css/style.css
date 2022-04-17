@@ -7,6 +7,7 @@
 html,body {
     font-family: "flatty";
     font-feature-settings: "ss02", "liga" on;
+    overflow-y: overlay;
     text-rendering: geometricPrecision;
     font-variation-settings: 'wght' 300;
     background-color: var(--backgroundColor);
@@ -353,8 +354,7 @@ html,body {
 
 .chubbImg {
     width: 100vw;
-    height: 62.5vw;
-    padding-top: var(--universalMargin);
+    padding: var(--universalMargin);
     display: flex;
     background: var(--textColor);
     color: var(--backgroundColor);
@@ -557,9 +557,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .type-tester {
     max-width: 100%;
     padding-left: var(--halfUniversalMargin);
+    padding-right: var(--halfUniversalMargin);
     text-align: left;
     display: flex;
-    overflow: scroll;
+    overflow: auto;
     align-items: flex-start;
     padding-top: 50px;
     height: fit-content;
@@ -569,7 +570,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 .text-input-fett {
     font-variation-settings: 'wght' 575;
-    font-size: 6.2vw;
+    font-size: 8.2vw;
     letter-spacing: -0.015em;
     line-height: 100%;
 }
@@ -752,9 +753,4 @@ input[type="range"]:focus::-webkit-slider-thumb {
         padding-right: var(--halfUniversalMargin);
     }
 
-
-    .text-input-fett {
-        font-size: 8.1vw;
-    }
-    
 }
