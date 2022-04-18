@@ -518,7 +518,6 @@ html,body {
 
 
 
-
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
@@ -551,13 +550,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
 
-
 .sliderCont {
     display: block;
     width: 25%;
     margin-right: var(--halfUniversalMargin);
 }
-
 
 .sliderCont input{
     width: 100%;
@@ -613,8 +610,30 @@ input[type="range"]:focus::-webkit-slider-thumb {
     font-feature-settings: "ss10";
 }
 
-
 .on {
+    opacity: 50%;
+}
+
+
+
+
+
+
+.resume {
+    padding: var(--halfUniversalMargin);
+    padding-top: var(--universalMargin);
+    width: 100vw;
+    display: flex;
+}
+
+.resume a {
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.resume a:hover {
     opacity: 50%;
 }
 
@@ -634,18 +653,12 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
 
-
-
-
 /*------- MEDIA QUERIES ------*/
-
-
 
 .mobileRow {
     display: flex;
     width: 50%;
 }
-
 
 .mobileRow .quarter {
     width: 50%;
@@ -655,7 +668,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
     width: 50%;
     display: flex;
 }
-
 
 @media only screen and (max-width: 910px) {
 
@@ -773,7 +785,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
     }
 
     .testerControls {
-        font-size: 12px;
         display: block;
     }
 
