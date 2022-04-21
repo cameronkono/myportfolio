@@ -6,7 +6,7 @@
 
 html,body {
     font-family: "flatty";
-    font-feature-settings: "ss02", "liga" on;
+    font-feature-settings: "liga" on, "dlig" on;
     overflow-y: overlay;
     text-rendering: geometricPrecision;
     font-variation-settings: 'wght' 300;
@@ -33,13 +33,13 @@ html,body {
 }
 
 @font-face {
-    font-family: 'swiss27';
-    src: url(fonts/Swiss27VF.ttf);
+    font-family: 'omni';
+    src: url(fonts/omniVF.ttf);
 }
 
 @font-face {
     font-family: 'flatty';
-    src: url(fonts/flattyEditsVF.ttf);
+    src: url(fonts/omniVF.ttf);
 }
 
 @font-face {
@@ -74,7 +74,6 @@ html,body {
     color: var(--backgroundColor);
     background:  var(--textColor);
 }
-
 
 
 /* ------- NAVIGATION ------- */
@@ -513,7 +512,7 @@ html,body {
     display: flex;
     align-items: flex-end;
     font-size: 14px;
-    font-variation-settings: 'wght' 575;
+    font-variation-settings: 'wght' 566;
 }
 
 
@@ -592,7 +591,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .text-input-fett {
-    font-variation-settings: 'wght' 675;
+    font-variation-settings: 'wght' 566;
     font-size: 8.2vw;
     letter-spacing: -0.02em;
     line-height: 105%;

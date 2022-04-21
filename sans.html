@@ -43,7 +43,7 @@
 
  
   <div class="firstImg">
-    <img src="Resources/htmlimg/sans/sans_cover.svg">
+    <img src="Resources/htmlimg/sans/sansSquare_cover.svg">
   </div>
 
   <div class="row" style="padding-bottom: var(--universalMargin);">
@@ -67,10 +67,10 @@
       This entire site is set in this font.
       <br><br>
       Particular influences include:<br>
-      Neue Haas Unica (Team 77, 1980)<br>
-      Programm (Karl Gerstner, 1964)<br>
-      Neue Haas Grotesk (Eduard Hoffmann & Max Miedingner, 1957)<br>
-      Rauchwaren (Walter Kach, 1949)
+      (•) Neue Haas Unica (Team 77, 1980)<br>
+      (•) Programm (Karl Gerstner, 1964)<br>
+      (•) Neue Haas Grotesk (Eduard Hoffmann & Max Miedingner, 1957)<br>
+      (•) Rauchwaren (Walter Kach, 1949)
       <br><br>
       Feel free to test drive the current available font below.
       <br><br>
@@ -86,7 +86,7 @@
         <div class="sliderLabel">
             Font Weight:&nbsp;<span class="weight-fett" id="weight-fett"></span>
         </div>
-        <input class="weight-slider-fett" type="range" min="300" max="800" step="1" id="weight-slider-fett" value="675">
+        <input class="weight-slider-fett" type="range" min="300" max="700" step="1" id="weight-slider-fett" value="566">
       </div>
 
       <div class="sliderCont">
@@ -112,12 +112,13 @@
 
   </div>
   
-  <div class="tester-alternates" style="display: none; font-size: 14px; font-variation-settings: 'wght' 575;">
-    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Alt a</div>
-    <div class="btn btn-fett" id="btn-fett2" data-value="ss10">Round dots</div>
-    <div class="btn btn-fett" id="btn-fett5" data-value="ss06">Alt G</div>
-    <div class="btn btn-fett" id="btn-fett4" data-value="ss04">Helvetic t f r</div>
-    <div class="btn btn-fett" id="btn-fett3" data-value="ss03">Alt arrows</div>
+  <div class="tester-alternates" style="font-size: 14px; font-variation-settings: 'wght' 566;">
+    <div class="btn btn-fett" id="btn-fett4" data-value="ss01">a w/ tail</div>
+    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Spurred a</div>
+    <div class="btn btn-fett" id="btn-fett2" data-value="ss03">Alt a</div>
+    <div class="btn btn-fett" id="btn-fett3" data-value="ss04">Alt K & k</div>
+    <div class="btn btn-fett" id="btn-fett5" data-value="ss05">Spurred R</div>
+    <div class="btn btn-fett" id="btn-fett7" data-value="ss11">Alt 1</div>
   </div>
   
   <!-- FOR DISPLAYING FONT SIZE & LETTER SPACING ON LOAD -->
@@ -235,6 +236,12 @@
     });
     document.getElementById("btn-fett5").addEventListener("click", function(event) {
         document.getElementById("btn-fett5").classList.toggle('on');
+    });
+    document.getElementById("btn-fett6").addEventListener("click", function(event) {
+        document.getElementById("btn-fett6").classList.toggle('on');
+    });
+    document.getElementById("btn-fett7").addEventListener("click", function(event) {
+        document.getElementById("btn-fett7").classList.toggle('on');
     });
   </script>
   
