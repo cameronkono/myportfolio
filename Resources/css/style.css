@@ -12,7 +12,7 @@ html,body {
     font-variation-settings: 'wght' 300;
     background-color: var(--backgroundColor);
     line-height: 133%;
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: 0.0em;
     color: var(--textColor);
     scroll-behavior: smooth;
@@ -39,7 +39,7 @@ html,body {
 
 @font-face {
     font-family: 'flatty';
-    src: url(fonts/omniVF.ttf);
+    src: url(fonts/omnimaVF.ttf);
 }
 
 @font-face {
