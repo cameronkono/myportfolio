@@ -9,7 +9,7 @@ html,body {
     font-feature-settings: "liga" on, "dlig" on;
     overflow-y: overlay;
     text-rendering: geometricPrecision;
-    font-variation-settings: 'wght' 300;
+    font-variation-settings: 'wght' 430;
     background-color: var(--backgroundColor);
     line-height: 133%;
     font-size: 21px;
@@ -29,7 +29,7 @@ html,body {
 
 @font-face {
     font-family: 'diatype';
-    src: url(fonts/ABCDiatypeVariable.ttf);
+    src: url(fonts/Swiss27VF.ttf);
 }
 
 @font-face {
@@ -116,6 +116,11 @@ html,body {
 
 
 /* ------- COLUMNS ------- */
+
+.eighth {
+    width: 12.5%;
+}
+
 
 .sixth {
   width: 16.5%;
@@ -454,11 +459,12 @@ html,body {
 
 .goToArchive {
     color: var(--textColor);
-    text-decoration:none;
+    text-decoration:underline;
 }
 
 .goToArchive:hover {
     opacity: 50%;
+    text-decoration: none;
 }
 
 .back {
@@ -622,6 +628,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
     padding: var(--halfUniversalMargin);
     padding-top: var(--universalMargin);
     width: 100vw;
+    justify-content: center;
     display: flex;
 }
 
@@ -669,10 +676,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 @media only screen and (max-width: 910px) {
-
-    html,body {
-        font-size: 20px;
-    }
 
 
     :root {
