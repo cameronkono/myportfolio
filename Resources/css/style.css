@@ -5,7 +5,7 @@
 }
 
 html,body {
-    font-family: "omni";
+    font-family: "flatty";
     font-feature-settings: "liga" on, "dlig" on;
     overflow-y: overlay;
     text-rendering: geometricPrecision;
@@ -33,13 +33,13 @@ html,body {
 }
 
 @font-face {
-    font-family: 'omni';
-    src: url(fonts/omnimaruVF.ttf);
+    font-family: 'flattie';
+    src: url(fonts/ehhVF.ttf);
 }
 
 @font-face {
     font-family: 'flatty';
-    src: url(fonts/mastifVF.ttf);
+    src: url(fonts/omnimaruVF.ttf);
 }
 
 @font-face {
