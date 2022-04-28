@@ -676,7 +676,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 @media only screen and (max-width: 910px) {
-
+    html,body {
+        font-size: 19px;
+    }
+    
 
     :root {
         --universalMargin: 8vw;
