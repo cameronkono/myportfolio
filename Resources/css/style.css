@@ -5,15 +5,15 @@
 }
 
 html,body {
-    font-family: "flatty";
+    font-family: "omni";
     font-feature-settings: "liga" on, "dlig" on;
     overflow-y: overlay;
     text-rendering: geometricPrecision;
-    font-variation-settings: 'wght' 430;
+    font-variation-settings: 'wght' 425;
     background-color: var(--backgroundColor);
     line-height: 133%;
     font-size: 21px;
-    letter-spacing: 0.0em;
+    letter-spacing: -0.015em;
     color: var(--textColor);
     scroll-behavior: smooth;
 }
@@ -34,12 +34,12 @@ html,body {
 
 @font-face {
     font-family: 'omni';
-    src: url(fonts/omniVF.ttf);
+    src: url(fonts/omnimaruVF.ttf);
 }
 
 @font-face {
     font-family: 'flatty';
-    src: url(fonts/omnimaVF\ 2.ttf);
+    src: url(fonts/mastifVF.ttf);
 }
 
 @font-face {
@@ -59,10 +59,10 @@ html,body {
     --quarterUniversalMargin: 0.5vw;
 }
 
-.bodydark{
+.bodyDark{
     --backgroundColor: black;
     --textColor: white;
-    --bgOffsetColor: #111;
+    --bgOffsetColor: #222;
     --doubleUniversalMargin: 16vw;
     --universalMargin: 8vw;
     --navMargin: 2vw;
@@ -597,8 +597,8 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .text-input-fett {
-    font-variation-settings: 'wght' 566;
-    font-size: 8.2vw;
+    font-variation-settings: 'wght' 425;
+    font-size: 14vw;
     letter-spacing: -0.02em;
     line-height: 105%;
 }
@@ -799,6 +799,14 @@ input[type="range"]:focus::-webkit-slider-thumb {
     .sliderCont {
         width: 100%;
         padding-right: var(--halfUniversalMargin);
+    }
+
+    .mobileSpace {
+        padding-top: var(--universalMargin);
+    }
+
+    .mobileDoubleSpace {
+        padding-top: var(--doubleUniversalMargin);
     }
 
 }

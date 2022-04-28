@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body class="bodyDark">
   <div class="nav" id="nav">
     <div class="half">
       <a href="index.html">Cameron Kono</a>
@@ -42,8 +42,8 @@
   </script>
 
  
-  <div class="firstImg">
-    <img src="Resources/htmlimg/sans/sansSquare_cover.svg">
+  <div class="firstImg  mobileSpace">
+    <img src="Resources/htmlimg/sans/sansSquare_coverBig.svg">
   </div>
 
   <div class="row" style="padding-bottom: var(--universalMargin);">
@@ -51,7 +51,7 @@
       <div style="width: 100%;">
         <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">PROJECT:</span>
         <br>
-        Flatty&nbsp;<span style="font-size: 14px;">v.1.01 (beta)</span>
+        Flatty&nbsp;<span style="letter-spacing: -0.005em; font-size: 14px;">v.1.01 (beta)</span>
         <br><br>
         <span style="font-size: 10px; font-variation-settings: 'wght' 700; letter-spacing: 0.05em;">ROLES:</span>
         <br>
@@ -61,17 +61,17 @@
       </div>
     </div>
     <div class="half">
-      Flatty is my personal study of the swiss neo-grotesque classics drawn by the likes of Walter Kach, Karl Gerstner and Max Miedigner, just to name a few. This typeface takes inspiration from the neutral and rational character of Swiss neo-grotesque typefaces. Flatty has alternate [a] glyphs, which express different time periods of this widely explored genre. Flatty is still a work in progress, with more weights and italics coming soon.
+      Flatty is my personal study of the swiss neo-grotesque classics drawn by the likes of Walter Kach, Karl Gerstner and Max Miedigner, just to name a few. This typeface takes inspiration from the neutral and rational character of Swiss neo-grotesque typefaces. This font is still a work in progress, with more weights and italics coming soon.
       <br>
       <br>
       This entire site is set in this typeface.
       <br><br>
       Particular influences include:<br>
-      (•) Neue Haas Unica (Team 77, 1980)<br>
-      (•) Programm (Karl Gerstner, 1964)<br>
-      (•) Neue Haas Grotesk (Eduard Hoffmann & Max Miedingner, 1957)<br>
-      (•) Rauchwaren (Walter Kach, 1949)<br>
-      (•) Univers (Adrian Frutiger, 1957)
+      ● Neue Haas Unica (Team 77, 1980)<br>
+      ● Programm (Karl Gerstner, 1964)<br>
+      ● Neue Haas Grotesk (Eduard Hoffmann & Max Miedingner, 1957)<br>
+      ● Rauchwaren (Walter Kach, 1949)<br>
+      ● Univers (Adrian Frutiger, 1957)
       <br><br>
       <a href="archive.html" class="goToArchive">↳ See archive for more Type Design</a>
       <br><br>
@@ -85,14 +85,14 @@
         <div class="sliderLabel">
             Font Weight:&nbsp;<span class="weight-fett" id="weight-fett"></span>
         </div>
-        <input class="weight-slider-fett" type="range" min="300" max="700" step="1" id="weight-slider-fett" value="566">
+        <input class="weight-slider-fett" type="range" min="300" max="700" step="1" id="weight-slider-fett" value="425">
       </div>
 
       <div class="sliderCont">
         <div class="sliderLabel">
             Font Size:&nbsp;<span class="font-size-fett" id="font-size-fett"></span>
         </div>
-          <input class="size-slider-fett" type="range" min=".5" max="70" step=".01" id="size-slider-fett" value="8.2">
+          <input class="size-slider-fett" type="range" min=".5" max="70" step=".01" id="size-slider-fett" value="14">
       </div>
 
       <div class="sliderCont">
@@ -112,10 +112,9 @@
   </div>
   
   <div class="tester-alternates" style="font-size: 14px; font-variation-settings: 'wght' 566;">
-    <div class="btn btn-fett" id="btn-fett" data-value="ss02">Spurred a</div>
-    <div class="btn btn-fett" id="btn-fett2" data-value="ss03">1980 a</div>
-    <div class="btn btn-fett" id="btn-fett4" data-value="ss08">1957 a</div>
+    <div class="btn btn-fett" id="btn-fett" data-value="ss01">Alt a</div>
     <div class="btn btn-fett" id="btn-fett3" data-value="ss04">Alt K & k</div>
+    <div class="btn btn-fett" id="btn-fett2" data-value="ss05">Spurred R</div>
     <div class="btn btn-fett" id="btn-fett7" data-value="ss11">Alt 1</div>
   </div>
   
@@ -246,7 +245,7 @@
   <div class="type-tester" id="type-tester-fett">
     <div class="text-input-fett" id="text-input-fett" contenteditable="true" spellcheck="false">
         <span>
-        The Group B regulations fostered some of the fastest, most powerful, and most sophisticated rally cars ever built. It is commonly referred to as the golden era of rallying.
+        “Rauchwaren”
         </span>
     </div>
   </div>
