@@ -597,7 +597,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .text-input-fett {
-    font-variation-settings: 'wght' 425;
+    font-variation-settings: 'wght' 700;
     font-size: 14vw;
     letter-spacing: -0.02em;
     line-height: 105%;
@@ -679,6 +679,13 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
     :root {
+        --universalMargin: 8vw;
+        --navMargin: 4vw;
+        --halfUniversalMargin: 4vw;
+        --quarterUniversalMargin: 0vw;
+    }
+
+    .bodyDark {
         --universalMargin: 8vw;
         --navMargin: 4vw;
         --halfUniversalMargin: 4vw;
