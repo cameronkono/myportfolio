@@ -12,7 +12,7 @@ html,body {
     font-variation-settings: 'wght' 425;
     background-color: var(--backgroundColor);
     line-height: 133%;
-    font-size: 21px;
+    font-size: 25px;
     letter-spacing: -0.015em;
     color: var(--textColor);
     scroll-behavior: smooth;
@@ -434,17 +434,17 @@ html,body {
     font-family: "chubba";
     color: var(--textColor);
     width: 100vw;
-    font-size: 10.85vw;
+    font-size: 8.85vw;
     line-height: 95%;
-    font-variation-settings: 'wght' 66;
+    font-variation-settings: 'wght' 60;
     text-align: center;
-    margin: var(--universalMargin) 0px;
+    margin-top: var(--universalMargin);
 }
 
-.comingSoon:hover {
-    color:var(--bgOffsetColor);
+.chubbaWeightLabel{
+    font-size: 14px;
+    letter-spacing: 0.005em;
 }
-
 .chubbaStyle {
     font-family: "chubba";
     font-size: 12vw;
@@ -628,7 +628,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
     padding: var(--halfUniversalMargin);
     padding-top: var(--universalMargin);
     width: 100vw;
-    justify-content: center;
     display: flex;
 }
 
@@ -677,7 +676,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 @media only screen and (max-width: 910px) {
     html,body {
-        font-size: 19px;
+        font-size: 21px;
     }
     
 
@@ -790,7 +789,10 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 
 
-
+    .chubbaWeightLabel{
+        font-size: 10px;
+        letter-spacing: 0.02em;
+    }
 
     .comingSoon {
         font-size: 10.35vw;
@@ -818,6 +820,11 @@ input[type="range"]:focus::-webkit-slider-thumb {
     .mobileDoubleSpace {
         padding-top: var(--doubleUniversalMargin);
     }
+
+    .backMobile {
+        margin: var(--doubleUniversalMargin);
+    }
+    
 
 }
 
